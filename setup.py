@@ -3,6 +3,7 @@
 from setuptools import setup
 
 setup(name='planner',
+      packages=['planner', 'planner.utils'],
       version='0.1.0',
       description='Planner for experiments with MRTA',
       author='Angela Enriquez Gomez',

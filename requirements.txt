@@ -1,2 +1,4 @@
 networkx
 pyYAML
+numpy
+matplotlib==3.0.3
