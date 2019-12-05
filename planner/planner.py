@@ -10,47 +10,52 @@ class Planner:
     def __init__(self, map_file, edge_info_path, min_n_runs, obstacle_interval):
 
         map_info = load_yaml(map_file)
+        self.nodes = map_info.get('nodes')
+        self.min_n_runs = min_n_runs
+        self.obstacle_interval = obstacle_interval
         self.map_graph = self.generate_map(map_info,
-                                           edge_info_path,
-                                           min_n_runs,
-                                           obstacle_interval)
+                                           edge_info_path)
 
-    @staticmethod
-    def generate_map(map_info, edge_info_path, min_n_runs, obstacle_interval):
-        nodes = map_info.get('nodes')
+    def generate_map(self, map_info, edge_info_path):
         edges = map_info.get('edges')
         lane_connections = map_info.get('lane-connections')
         map_graph = nx.Graph()
 
         for edge in edges:
             if edge in lane_connections:
-                map_graph.add_edge(edge[0], edge[1])
-                for node in edge:
-                    map_graph.add_node(node,
-                                       pose=nodes[node],
-                                       connection_lane=True)
+                map_graph = self.add_connection_lane(map_graph, edge)
             else:
-                edge_name = edge[0] + '_to_' + edge[1]
-                file_path = edge_info_path + edge_name + '.summary'
-
+                file_path = edge_info_path + edge[0] + '_to_' + edge[1] + '.summary'
                 if os.path.isfile(file_path):
                     with open(file_path, 'r') as source_file:
                         for line in source_file.readlines():
-                            values = line.split(' ')
-                            n_runs = int(values[0])
-                            mean = float(values[1])
-                            stdev = float(values[2])
-                            n_obstacles = int(values[3])
+                            map_graph = self.add_edge(map_graph, edge, line)
+        return map_graph
 
-                            if n_obstacles in obstacle_interval and n_runs >= min_n_runs:
-                                map_graph.add_edge(edge[0], edge[1])
-                                for node in edge:
-                                    map_graph.add_node(node,
-                                                       pose=nodes[node],
-                                                       n_runs=n_runs,
-                                                       mean=mean,
-                                                       stdev=stdev,
-                                                       n_obstacles=n_obstacles)
+    def add_connection_lane(self, map_graph, edge):
+        map_graph.add_edge(edge[0], edge[1])
+        for node in edge:
+            map_graph.add_node(node,
+                               pose=self.nodes[node],
+                               connection_lane=True)
+        return map_graph
+
+    def add_edge(self, map_graph, edge, edge_info):
+        values = edge_info.split(' ')
+        n_runs = int(values[0])
+        mean = float(values[1])
+        stdev = float(values[2])
+        n_obstacles = int(values[3])
+
+        if n_obstacles in self.obstacle_interval and n_runs >= self.min_n_runs:
+            map_graph.add_edge(edge[0], edge[1])
+            for node in edge:
+                map_graph.add_node(node,
+                                   pose=self.nodes[node],
+                                   n_runs=n_runs,
+                                   mean=mean,
+                                   stdev=stdev,
+                                   n_obstacles=n_obstacles)
         return map_graph
 
     def distance(self, node_1, node_2):
