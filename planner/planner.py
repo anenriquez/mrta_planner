@@ -25,20 +25,25 @@ class Planner:
             if edge in lane_connections:
                 map_graph = self.add_connection_lane(map_graph, edge)
             else:
-                file_path = edge_info_path + edge[0] + '_to_' + edge[1] + '.summary'
-                if os.path.isfile(file_path):
-                    with open(file_path, 'r') as source_file:
-                        for line in source_file.readlines():
-                            map_graph = self.add_edge(map_graph, edge, line)
+                edge_info = self.get_edge_info(edge, edge_info_path)
+                if edge_info:
+                    map_graph = self.add_edge(map_graph, edge, edge_info)
+
         return map_graph
 
     def add_connection_lane(self, map_graph, edge):
-        map_graph.add_edge(edge[0], edge[1])
+        map_graph.add_edge(edge[0], edge[1], connection_lane=True)
         for node in edge:
-            map_graph.add_node(node,
-                               pose=self.nodes[node],
-                               connection_lane=True)
+            map_graph.add_node(node, pose=self.nodes[node])
         return map_graph
+
+    @staticmethod
+    def get_edge_info(edge, edge_info_path):
+        file_path = edge_info_path + edge[0] + '_to_' + edge[1] + '.summary'
+        if os.path.isfile(file_path):
+            with open(file_path, 'r') as source_file:
+                for edge_info in source_file.readlines():
+                    return edge_info
 
     def add_edge(self, map_graph, edge, edge_info):
         values = edge_info.split(' ')
@@ -48,14 +53,16 @@ class Planner:
         n_obstacles = int(values[3])
 
         if n_obstacles in self.obstacle_interval and n_runs >= self.min_n_runs:
-            map_graph.add_edge(edge[0], edge[1])
+            # TODO: Check of edge already exists. Combine the new pdf with the previous one
+
+            map_graph.add_edge(edge[0], edge[1],
+                               n_runs=n_runs,
+                               mean=mean,
+                               stdev=stdev,
+                               n_obstacles=n_obstacles)
             for node in edge:
                 map_graph.add_node(node,
-                                   pose=self.nodes[node],
-                                   n_runs=n_runs,
-                                   mean=mean,
-                                   stdev=stdev,
-                                   n_obstacles=n_obstacles)
+                                   pose=self.nodes[node])
         return map_graph
 
     def distance(self, node_1, node_2):
