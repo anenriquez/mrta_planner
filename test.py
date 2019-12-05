@@ -1,24 +1,25 @@
 from planner.planner import Planner
-from planner.utils.utils import  plot_map
+import argparse
 
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('source', type=str, help='Name of source node')
+    parser.add_argument('destination', type=str, help='Name of destination node')
+    args = parser.parse_args()
+
     map_file = 'planner/config/brsu.yaml'
-    pdf_path = '../ropod_rosbag_processing/ropod_rosbag_processing/angela/'
+    edge_info_path = '../ropod_rosbag_processing/ropod_rosbag_processing/angela/results/'
+    min_n_runs = 1
+    obstacle_interval = list(range(0, 3))
 
-    planner = Planner(map_file)
-    min_distance, min_edge = planner.get_min_distance()
-    print("minimal distance: ", min_distance)
-    print("minimal edge: ", min_edge)
+    planner = Planner(map_file, edge_info_path, min_n_runs, obstacle_interval)
 
-    source = 'Pose_220'
-    destination = 'Pose_43'
+    path = planner.get_path(args.source, args.destination)
 
-    path = planner.get_path(source, destination)
-
-    print("Path from {} to {}: {}".format(source, destination, path))
+    print("Path from {} to {}: {}".format(args.source, args.destination, path))
 
     graph_json = planner.to_json("brsu.json")
-    plot_map("brsu.json")
+
 
 

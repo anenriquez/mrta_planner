@@ -1,4 +1,5 @@
 import json
+import os
 
 import networkx as nx
 import numpy as np
@@ -6,21 +7,50 @@ from planner.utils.utils import load_yaml
 
 
 class Planner:
-    def __init__(self, map_file):
+    def __init__(self, map_file, edge_info_path, min_n_runs, obstacle_interval):
 
         map_info = load_yaml(map_file)
-        nodes = map_info.get('nodes')
-        edges = map_info.get('edges')
-        self.map_graph = self.generate_map(nodes, edges)
+        self.map_graph = self.generate_map(map_info,
+                                           edge_info_path,
+                                           min_n_runs,
+                                           obstacle_interval)
 
     @staticmethod
-    def generate_map(nodes, edges):
-        # TODO: Only add edges that have a duration probability distribution
+    def generate_map(map_info, edge_info_path, min_n_runs, obstacle_interval):
+        nodes = map_info.get('nodes')
+        edges = map_info.get('edges')
+        lane_connections = map_info.get('lane-connections')
         map_graph = nx.Graph()
+
         for edge in edges:
-            map_graph.add_edge(edge[0], edge[1])
-            for node in edge:
-                map_graph.add_node(node, pose=nodes[node])
+            if edge in lane_connections:
+                map_graph.add_edge(edge[0], edge[1])
+                for node in edge:
+                    map_graph.add_node(node,
+                                       pose=nodes[node],
+                                       connection_lane=True)
+            else:
+                edge_name = edge[0] + '_to_' + edge[1]
+                file_path = edge_info_path + edge_name + '.summary'
+
+                if os.path.isfile(file_path):
+                    with open(file_path, 'r') as source_file:
+                        for line in source_file.readlines():
+                            values = line.split(' ')
+                            n_runs = int(values[0])
+                            mean = float(values[1])
+                            stdev = float(values[2])
+                            n_obstacles = int(values[3])
+
+                            if n_obstacles in obstacle_interval and n_runs >= min_n_runs:
+                                map_graph.add_edge(edge[0], edge[1])
+                                for node in edge:
+                                    map_graph.add_node(node,
+                                                       pose=nodes[node],
+                                                       n_runs=n_runs,
+                                                       mean=mean,
+                                                       stdev=stdev,
+                                                       n_obstacles=n_obstacles)
         return map_graph
 
     def distance(self, node_1, node_2):
