@@ -4,65 +4,73 @@ import os
 import networkx as nx
 import numpy as np
 from planner.utils.utils import load_yaml
+from planner.edge import Edge
 
 
 class Planner:
     def __init__(self, map_file, edge_info_path, min_n_runs, obstacle_interval):
-
         map_info = load_yaml(map_file)
-        self.nodes = map_info.get('nodes')
         self.min_n_runs = min_n_runs
         self.obstacle_interval = obstacle_interval
         self.map_graph = self.generate_map(map_info,
                                            edge_info_path)
 
     def generate_map(self, map_info, edge_info_path):
+        nodes = map_info.get('nodes')
         edges = map_info.get('edges')
         lane_connections = map_info.get('lane-connections')
         map_graph = nx.Graph()
 
         for edge in edges:
             if edge in lane_connections:
-                map_graph = self.add_connection_lane(map_graph, edge)
+                map_graph = self.add_connection_lane(map_graph, edge, nodes)
             else:
-                edge_info = self.get_edge_info(edge, edge_info_path)
-                if edge_info:
-                    map_graph = self.add_edge(map_graph, edge, edge_info)
+                # Get info for edge in both directions
+                undirected_edge_info = None
+                edge_info_1 = self.get_edge_info(edge[0] + '_to_' + edge[1], edge_info_path)
+                edge_info_2 = self.get_edge_info(edge[1] + '_to_' + edge[0], edge_info_path)
+                if edge_info_1 and edge_info_2:
+                    undirected_edge_info = edge_info_1 + edge_info_2
+                elif edge_info_1 and edge_info_2 is None:
+                    undirected_edge_info = edge_info_1
+                elif edge_info_2 and edge_info_1 is None:
+                    undirected_edge_info = edge_info_2
 
-        return map_graph
+                if undirected_edge_info:
+                    map_graph = self.add_edge(map_graph, edge, nodes, undirected_edge_info)
 
-    def add_connection_lane(self, map_graph, edge):
-        map_graph.add_edge(edge[0], edge[1], connection_lane=True)
-        for node in edge:
-            map_graph.add_node(node, pose=self.nodes[node])
         return map_graph
 
     @staticmethod
-    def get_edge_info(edge, edge_info_path):
-        file_path = edge_info_path + edge[0] + '_to_' + edge[1] + '.summary'
+    def add_connection_lane(map_graph, edge, nodes):
+        map_graph.add_edge(edge[0], edge[1], connection_lane=True)
+        for node in edge:
+            map_graph.add_node(node, pose=nodes[node])
+        return map_graph
+
+    @staticmethod
+    def get_edge_info(edge_name, edge_info_path):
+        file_path = edge_info_path + edge_name + '.summary'
         if os.path.isfile(file_path):
             with open(file_path, 'r') as source_file:
-                for edge_info in source_file.readlines():
-                    return edge_info
+                for line in source_file.readlines():
+                    n_runs, mean, variance, n_obstacles = line.split(' ')
+                    return Edge(edge_name, int(n_runs), float(mean), float(variance), int(n_obstacles))
 
-    def add_edge(self, map_graph, edge, edge_info):
-        values = edge_info.split(' ')
-        n_runs = int(values[0])
-        mean = float(values[1])
-        stdev = float(values[2])
-        n_obstacles = int(values[3])
+    def add_edge(self, map_graph, edge, nodes, edge_info):
+        if edge_info.max_n_obstacles in self.obstacle_interval \
+                and edge_info.n_runs >= self.min_n_runs:
 
-        if n_obstacles in self.obstacle_interval and n_runs >= self.min_n_runs:
-            # TODO: Check of edge already exists. Combine the new pdf with the previous one
+            # If edge already exists combine this edge_info with the previous one
+            if map_graph.has_edge(edge[0], edge[1]):
+                edge_previous_info = map_graph.get_edge_data(edge[0], edge[1])
+                edge_info = Edge.from_dict(edge_previous_info) + edge_info
 
-            map_graph.add_edge(edge[0], edge[1],
-                               n_runs=n_runs,
-                               mean=mean,
-                               stdev=stdev,
-                               n_obstacles=n_obstacles)
+            map_graph.add_edge(edge[0], edge[1], **edge_info.to_dict())
+
             for node in edge:
-                map_graph.add_node(node,
-                                   pose=self.nodes[node])
+                map_graph.add_node(node, pose=nodes[node])
+
         return map_graph
 
     def distance(self, node_1, node_2):
