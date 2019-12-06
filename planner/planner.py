@@ -94,6 +94,28 @@ class Planner:
                 min_edge = edge
         return min_distance, min_edge
 
+    def get_estimated_duration(self, path):
+        """ Returns the estimated duration to go from the first to the last location
+        of a given path
+        args:
+            path (list): list of nodes
+        return:
+            mean (float)
+            variance (float)
+        """
+        mean = 0
+        variance = 0
+        for i in range(0, len(path)-1):
+            edge_data = self.map_graph.get_edge_data(path[i], path[i+1])
+            if edge_data.get('connection_lane'):
+                # No experimental info for this edge, add a duration of 1 unit with no variance
+                mean += 1
+            else:
+                mean += edge_data.get('mean')
+                variance += edge_data.get('variance')
+
+        return mean, variance
+
     def to_json(self, file_path):
         data = nx.node_link_data(self.map_graph)
         with open(file_path, 'w') as outfile:

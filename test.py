@@ -19,7 +19,10 @@ if __name__ == '__main__':
 
     print("Path from {} to {}: {}".format(args.source, args.destination, path))
 
-    graph_json = planner.to_json("brsu.json")
+    mean, variance = planner.get_estimated_duration(path)
+    print("mean: ", mean)
+    print("variance: ", variance)
 
+    graph_json = planner.to_json("brsu.json")
 
 
