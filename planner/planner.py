@@ -2,18 +2,23 @@ import networkx as nx
 import numpy as np
 from planner.map_graph import MapGraph
 from planner.utils.utils import load_yaml
+from importlib_resources import open_text
 
 
 class Planner:
-    def __init__(self):
-        self.map_graph = MapGraph()
+    def __init__(self, map_name, load_map=True, **kwargs):
+        self.map_graph = MapGraph(map_name)
+        self.map_name = map_name
+        if load_map:
+            self.load_map()
 
     def generate_map(self, map_file, edge_info_path, min_n_runs, obstacle_interval):
         map_info = load_yaml(map_file)
         self.map_graph.generate_map(map_info, edge_info_path, min_n_runs, obstacle_interval)
 
-    def load_map(self, json_file):
-        self.map_graph = self.map_graph.from_json(json_file)
+    def load_map(self):
+        json_file = open_text('planner.maps', self.map_name + '.json').name
+        self.map_graph = self.map_graph.from_json(json_file, self.map_name)
 
     def distance(self, node_1, node_2):
         x1, y1, z1 = self.map_graph.nodes[node_1]['pose']

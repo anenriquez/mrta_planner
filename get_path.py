@@ -8,8 +8,7 @@ if __name__ == '__main__':
     parser.add_argument('destination', type=str, help='Name of destination node')
     args = parser.parse_args()
 
-    planner = Planner()
-    planner.load_map('planner/maps/brsu.json')
+    planner = Planner('brsu')
 
     path = planner.get_path(args.source, args.destination)
 
