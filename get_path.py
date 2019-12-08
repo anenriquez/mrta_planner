@@ -1,6 +1,6 @@
-from planner.planner import Planner
 import argparse
 
+from planner.planner import Planner
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
@@ -8,18 +8,13 @@ if __name__ == '__main__':
     parser.add_argument('destination', type=str, help='Name of destination node')
     args = parser.parse_args()
 
-    map_file = 'planner/config/brsu.yaml'
-    edge_info_path = '../ropod_rosbag_processing/ropod_rosbag_processing/angela/results/'
-    min_n_runs = 1
-    obstacle_interval = list(range(0, 3))
-
-    planner = Planner(map_file, edge_info_path, min_n_runs, obstacle_interval)
+    planner = Planner()
+    planner.load_map('planner/maps/brsu.json')
 
     path = planner.get_path(args.source, args.destination)
 
     print("Path from {} to {}: {}".format(args.source, args.destination, path))
 
-    graph_json = planner.to_json("brsu.json")
-
-
-
+    mean, variance = planner.get_estimated_duration(path)
+    print("mean: ", mean)
+    print("variance: ", variance)
