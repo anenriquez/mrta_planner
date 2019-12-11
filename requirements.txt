@@ -2,4 +2,5 @@ networkx
 pyYAML
 numpy
 matplotlib==3.0.3
+importlib_resources
 git+https://github.com/anenriquez/ropod_rosbag_processing

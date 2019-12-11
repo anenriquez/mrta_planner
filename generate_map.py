@@ -7,8 +7,6 @@ if __name__ == '__main__':
     min_n_runs = 1
     obstacle_interval = list(range(0, 3))
 
-    planner = Planner()
+    planner = Planner('brsu', load_map=False)
     planner.generate_map(map_file, edge_info_path, min_n_runs, obstacle_interval)
-
-    graph_json = planner.map_graph.to_json("planner/maps/brsu.json")
 
