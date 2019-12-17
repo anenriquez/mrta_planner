@@ -28,6 +28,12 @@ class Planner:
     def get_path(self, node_1, node_2):
         return nx.astar_path(self.map_graph, node_1, node_2, self.distance)
 
+    def get_node(self, x, y, theta):
+        poses = nx.get_node_attributes(self.map_graph, 'pose')
+        for node, pose in poses.items():
+            if pose == [x, y, theta]:
+                return node
+
     def get_min_distance(self):
         """ Returns the minimal distance between all edges and the edge name
         with the minimal distance
