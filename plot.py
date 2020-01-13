@@ -1,4 +1,11 @@
+import argparse
+
 from planner.utils.utils import plot_map
 
 if __name__ == '__main__':
-    plot_map("planner/maps/brsu.json")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("map_name", type=str, help="Name of the map")
+    args = parser.parse_args()
+    path_to_map = "planner/maps/" + args.map_name
+
+    plot_map(path_to_map)
