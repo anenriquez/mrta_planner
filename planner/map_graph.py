@@ -11,12 +11,12 @@ class MapGraph(nx.Graph):
         super().__init__()
         self.map_name = map_name
 
-    def generate_map(self, map_info, edge_info_path, min_n_runs, obstacle_interval):
+    def generate_map(self, map_info, edge_info_path, min_n_runs, max_n_obstacles):
         nodes = map_info.get('nodes')
         edges = map_info.get('edges')
         lane_connections = map_info.get('lane-connections')
         goals = map_info.get('goals')
-        self.add_meta_info(min_n_runs, obstacle_interval, goals)
+        self.add_meta_info(min_n_runs, max_n_obstacles, goals)
 
         for edge in edges:
             if edge in lane_connections:
@@ -38,9 +38,9 @@ class MapGraph(nx.Graph):
 
         self.to_json("planner/maps/" + self.map_name + ".json")
 
-    def add_meta_info(self, min_n_runs, obstacle_interval, goals):
+    def add_meta_info(self, min_n_runs, max_n_obstacles, goals):
         self.graph['min_n_runs'] = min_n_runs
-        self.graph['obstacle_interval'] = obstacle_interval
+        self.graph['max_n_obstacles'] = max_n_obstacles
         self.graph['goals'] = goals
 
     def add_connection_lane(self, edge, nodes):
@@ -48,21 +48,30 @@ class MapGraph(nx.Graph):
         for node in edge:
             self.add_node(node, pose=nodes[node])
 
-    @staticmethod
-    def get_edge_info(edge_name, edge_info_path):
+    def get_edge_info(self, edge_name, edge_info_path):
+        # Each edge has a summary file which can contain several lines, one per max_n_obstacles
         file_path = edge_info_path + edge_name + '.summary'
         if os.path.isfile(file_path):
+            edge = None
             with open(file_path, 'r') as source_file:
                 for line in source_file.readlines():
-                    n_runs, mean, variance, n_obstacles = line.split(' ')
-                    return Edge(edge_name, int(n_runs), float(mean), float(variance), int(n_obstacles))
+                    n_runs, mean, stdev, max_n_obstacles = line.split(' ')
+
+                    if int(max_n_obstacles) <= self.graph['max_n_obstacles']:
+                        if edge is None:
+                            edge = Edge(edge_name, int(n_runs), float(mean), float(stdev), int(max_n_obstacles))
+                        else:
+                            edge = edge + Edge(edge_name, int(n_runs), float(mean), float(stdev), int(max_n_obstacles))
+            return edge
+        else:
+            print("File with edge info for edge {} does not exist".format(edge_name))
 
     def add_undirected_edge(self, edge, nodes, edge_info):
-        if edge_info.max_n_obstacles in self.graph['obstacle_interval'] \
-                and edge_info.n_runs >= self.graph['min_n_runs']:
+        if edge_info.n_runs >= self.graph['min_n_runs']:
 
             # If edge already exists combine this edge_info with the previous one
             if self.has_edge(edge[0], edge[1]):
+                print("Edge already exists: ", edge_info)
                 edge_previous_info = self.get_edge_data(edge[0], edge[1])
                 edge_info = Edge.from_dict(edge_previous_info) + edge_info
 

@@ -1467,7 +1467,6 @@ edges:
   - [LA-005, stairs-mensa]
   - [A-elevator-1, stairs-mensa]
   - [LA-005, mensa-entrance]
-  - [LA-005, stairs-mensa]
   - [LC-054, C002]
   - [LA-002, A-stairs-main]
   - [INT-A001, LA-011]
