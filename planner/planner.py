@@ -12,9 +12,9 @@ class Planner:
         if load_map:
             self.load_map()
 
-    def generate_map(self, map_file, edge_info_path, min_n_runs, obstacle_interval):
+    def generate_map(self, map_file, edge_info_path, min_n_runs, max_n_obstacles):
         map_info = load_yaml(map_file)
-        self.map_graph.generate_map(map_info, edge_info_path, min_n_runs, obstacle_interval)
+        self.map_graph.generate_map(map_info, edge_info_path, min_n_runs, max_n_obstacles)
 
     def load_map(self):
         json_file = open_text('planner.maps', self.map_name + '.json').name
