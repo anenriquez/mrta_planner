@@ -34,6 +34,11 @@ class Planner:
             if pose == [x, y, theta]:
                 return node
 
+    def get_pose(self, node_name):
+        for node_id, data in self.map_graph.nodes(data=True):
+            if node_id == node_name:
+                return data["pose"]
+
     def get_min_distance(self):
         """ Returns the minimal distance between all edges and the edge name
         with the minimal distance
