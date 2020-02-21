@@ -11,12 +11,12 @@ class MapGraph(nx.Graph):
         super().__init__()
         self.map_name = map_name
 
-    def generate_map(self, map_info, edge_info_path, min_n_runs, max_n_obstacles):
+    def generate_map(self, map_info, edge_info_path, min_n_runs, obstacle_interval):
         nodes = map_info.get('nodes')
         edges = map_info.get('edges')
         lane_connections = map_info.get('lane-connections')
         goals = map_info.get('goals')
-        self.add_meta_info(min_n_runs, max_n_obstacles, goals)
+        self.add_meta_info(min_n_runs, obstacle_interval, goals)
 
         for edge in edges:
             if edge in lane_connections:
@@ -38,9 +38,9 @@ class MapGraph(nx.Graph):
 
         self.to_json("planner/maps/" + self.map_name + ".json")
 
-    def add_meta_info(self, min_n_runs, max_n_obstacles, goals):
+    def add_meta_info(self, min_n_runs, obstacle_interval, goals):
         self.graph['min_n_runs'] = min_n_runs
-        self.graph['max_n_obstacles'] = max_n_obstacles
+        self.graph['obstacle_interval'] = obstacle_interval
         self.graph['goals'] = goals
 
     def add_connection_lane(self, edge, nodes):
@@ -57,7 +57,7 @@ class MapGraph(nx.Graph):
                 for line in source_file.readlines():
                     n_runs, mean, stdev, max_n_obstacles = line.split(' ')
 
-                    if int(max_n_obstacles) <= self.graph['max_n_obstacles']:
+                    if int(max_n_obstacles) in self.graph['obstacle_interval']:
                         if edge is None:
                             edge = Edge(edge_name, int(n_runs), float(mean), float(stdev), int(max_n_obstacles))
                         else:
