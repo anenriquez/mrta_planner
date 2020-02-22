@@ -14,9 +14,9 @@ if __name__ == '__main__':
 
     print("obstacle interval: ", obstacle_interval)
 
-    map_file = 'planner/config/brsu.yaml'
+    config_file = 'planner/config/config.yaml'
     edge_info_path = '../ropod_rosbag_processing/ropod_rosbag_processing/angela/results/'
 
     planner = Planner(args.map_name, load_map=False)
-    planner.generate_map(map_file, edge_info_path, args.min_n_runs, obstacle_interval)
+    planner.generate_map(config_file, edge_info_path, args.min_n_runs, obstacle_interval)
 

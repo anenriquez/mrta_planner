@@ -11,11 +11,11 @@ class MapGraph(nx.Graph):
         super().__init__()
         self.map_name = map_name
 
-    def generate_map(self, map_info, edge_info_path, min_n_runs, obstacle_interval):
-        nodes = map_info.get('nodes')
-        edges = map_info.get('edges')
-        lane_connections = map_info.get('lane-connections')
-        goals = map_info.get('goals')
+    def generate_map(self, config, edge_info_path, min_n_runs, obstacle_interval):
+        nodes = config.get('nodes')
+        edges = config.get('edges')
+        lane_connections = config.get('lane-connections')
+        goals = config.get('goals')
         self.add_meta_info(min_n_runs, obstacle_interval, goals)
 
         for edge in edges:
@@ -36,7 +36,7 @@ class MapGraph(nx.Graph):
                 if undirected_edge_info:
                     self.add_undirected_edge(edge, nodes, undirected_edge_info)
 
-        self.to_json("planner/maps/" + self.map_name + ".json")
+        self.to_json("planner/graphs/" + self.map_name + ".json")
 
     def add_meta_info(self, min_n_runs, obstacle_interval, goals):
         self.graph['min_n_runs'] = min_n_runs

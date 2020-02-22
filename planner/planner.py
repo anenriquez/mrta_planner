@@ -12,12 +12,12 @@ class Planner:
         if load_map:
             self.load_map()
 
-    def generate_map(self, map_file, edge_info_path, min_n_runs, obstacle_interval):
-        map_info = load_yaml(map_file)
-        self.map_graph.generate_map(map_info, edge_info_path, min_n_runs, obstacle_interval)
+    def generate_map(self, config_file, edge_info_path, min_n_runs, obstacle_interval):
+        config = load_yaml(config_file)
+        self.map_graph.generate_map(config, edge_info_path, min_n_runs, obstacle_interval)
 
     def load_map(self):
-        json_file = open_text('planner.maps', self.map_name + '.json').name
+        json_file = open_text('planner.graphs', self.map_name + '.json').name
         self.map_graph = self.map_graph.from_json(json_file, self.map_name)
 
     def distance(self, node_1, node_2):
