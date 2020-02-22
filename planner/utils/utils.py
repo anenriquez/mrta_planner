@@ -16,6 +16,13 @@ def load_yaml(file):
     return data
 
 
+def load_graph_from_file(json_file):
+    with open(json_file) as file_:
+        data = json.load(file_)
+    graph = nx.node_link_graph(data)
+    return graph
+
+
 def plot_map(map_file):
     with open(map_file) as json_file:
         data = json.load(json_file)
@@ -37,3 +44,5 @@ def get_pdf(path, edge_name):
         return pdf
     except FileNotFoundError:
         print("File {} does not exist".format(pdf_file))
+
+
