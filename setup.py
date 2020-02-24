@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(name='planner',
-      packages=['planner', 'planner.maps', 'planner.utils'],
+      packages=['planner', 'planner.graphs', 'planner.utils'],
       version='0.1.0',
       install_requires=[
             'networkx',
