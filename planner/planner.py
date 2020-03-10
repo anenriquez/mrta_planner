@@ -28,10 +28,10 @@ class Planner:
     def get_path(self, node_1, node_2):
         return nx.astar_path(self.map_graph, node_1, node_2, self.distance)
 
-    def get_node(self, x, y, theta):
+    def get_node(self, x, y):
         poses = nx.get_node_attributes(self.map_graph, 'pose')
         for node, pose in poses.items():
-            if pose == [x, y, theta]:
+            if pose == [x, y, 0]:
                 return node
 
     def get_pose(self, node_name):
