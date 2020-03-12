@@ -24,8 +24,8 @@ class MapGraph(nx.Graph):
             else:
                 # Get info for edge in both directions
                 undirected_edge_info = None
-                edge_info_1 = self.get_edge_info(edge[0] + '_to_' + edge[1], edge_info_path)
-                edge_info_2 = self.get_edge_info(edge[1] + '_to_' + edge[0], edge_info_path)
+                edge_info_1 = self.get_edge_info(str(edge[0]) + '_to_' + str(edge[1]), edge_info_path)
+                edge_info_2 = self.get_edge_info(str(edge[1]) + '_to_' + str(edge[0]), edge_info_path)
                 if edge_info_1 and edge_info_2:
                     undirected_edge_info = edge_info_1 + edge_info_2
                 elif edge_info_1 and edge_info_2 is None:
