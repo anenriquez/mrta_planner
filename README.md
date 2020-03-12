@@ -24,5 +24,5 @@ python3 get_path.py map_name pose_1 pose_2
 ## Plot a map
 
 ```
-python3 plot.py
+python3 plot.py map_name
 ```
