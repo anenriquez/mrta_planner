@@ -1,2166 +1,3291 @@
 {
-  "directed": false,
   "links": [
     {
-      "connection_lane": true,
-      "source": "C018-2",
-      "target": "C019"
-    },
-    {
-      "n_runs": 158,
-      "stdev": 0.5854279109547595,
-      "source": "C018-2",
-      "name": "C018-1_to_C018-2<->C018-2_to_C018-1",
-      "target": "C018-1",
-      "mean": 5.548841650196204,
-      "variance": 0.34272583892485387,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 366,
-      "stdev": 0.5717235962688324,
-      "source": "C018-2",
-      "name": "C018-2_to_LC-007<->LC-007_to_C018-2",
-      "target": "LC-007",
-      "mean": 5.432008939950819,
-      "variance": 0.3268678705305669,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 118,
-      "stdev": 0.29837203155784425,
-      "source": "LA-004",
-      "name": "A-main-entrance_to_LA-004<->LA-004_to_A-main-entrance",
-      "target": "A-main-entrance",
-      "mean": 3.621475882652543,
-      "variance": 0.0890258692159552,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 110,
-      "stdev": 1.568149642811435,
-      "source": "LA-004",
-      "name": "LA-004_to_LA-005<->LA-005_to_LA-004",
-      "target": "LA-005",
-      "mean": 6.972073193654545,
-      "variance": 2.4590933022496313,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "C058",
-      "target": "C061-2"
-    },
-    {
-      "n_runs": 115,
-      "stdev": 0.18060538553604777,
-      "source": "C058",
-      "name": "C058_to_C060",
-      "target": "C060",
-      "mean": 6.215554648904348,
-      "variance": 0.03261830528462445,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 39,
-      "stdev": 0.6282286688574339,
-      "source": "C058",
-      "name": "LC-026_to_C058",
-      "target": "LC-026",
-      "mean": 5.341035590205128,
-      "variance": 0.3946712603743833,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 16,
-      "stdev": 0.1845072286621892,
-      "source": "LB-060",
-      "name": "LB-060_to_INT-B004<->INT-B004_to_LB-060",
-      "target": "INT-B004",
-      "mean": 2.3676308805625,
-      "variance": 0.03404291742860137,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 26,
-      "stdev": 0.20984615851862154,
-      "source": "LB-060",
-      "name": "B057_to_LB-060<->LB-060_to_B057",
-      "target": "B057",
-      "mean": 1.7521758750769232,
-      "variance": 0.04403541024502244,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "LB-060",
-      "target": "LB-059"
-    },
-    {
-      "connection_lane": true,
-      "source": "B044-2",
-      "target": "B047"
-    },
-    {
-      "n_runs": 4,
-      "stdev": 0.038531933822391756,
-      "source": "B044-2",
-      "name": "B044-2_to_LB-050",
-      "target": "LB-050",
-      "mean": 3.2767748725,
-      "variance": 0.0014847099240931777,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 14,
-      "stdev": 0.430695384283266,
-      "source": "B044-2",
-      "name": "B044-1_to_B044-2",
-      "target": "B044-1",
-      "mean": 4.6884410231428575,
-      "variance": 0.18549851404291015,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "init_24",
-      "target": "C020"
-    },
-    {
-      "connection_lane": true,
-      "source": "C066",
-      "target": "LC-046"
-    },
-    {
-      "n_runs": 4,
-      "stdev": 0.7167478520020546,
-      "source": "C066",
-      "name": "INT-C004_to_C066",
-      "target": "INT-C004",
-      "mean": 7.20825427375,
-      "variance": 0.5137274833495592,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 8,
-      "stdev": 0.27232386978034334,
-      "source": "C066",
-      "name": "C066_to_LC-047",
-      "target": "LC-047",
-      "mean": 2.438853326875,
-      "variance": 0.07416029005214139,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 14,
-      "stdev": 0.8665391745480002,
-      "source": "B065",
-      "name": "B065_to_B067<->B067_to_B065",
-      "target": "B067",
-      "mean": 8.621943941714287,
-      "variance": 0.7508901410263296,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 23,
-      "stdev": 0.6421983877851777,
-      "source": "B065",
-      "name": "B063_to_B065<->B065_to_B063",
-      "target": "B063",
-      "mean": 6.005714788478261,
-      "variance": 0.41241876927388144,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B065",
-      "target": "B062"
-    },
-    {
-      "n_runs": 62,
-      "stdev": 0.40249651991452196,
-      "source": "LA-010",
-      "name": "LA-010_to_LA-022<->LA-022_to_LA-010",
-      "target": "LA-022",
-      "mean": 3.993337907258064,
-      "variance": 0.16200344854330118,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 159,
-      "stdev": 1.1990878793639612,
-      "source": "LA-010",
-      "name": "LA-008_to_LA-010<->LA-010_to_LA-008",
-      "target": "LA-008",
-      "mean": 9.760693779339624,
-      "variance": 1.4378117424375616,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 8,
-      "stdev": 2.3372903601484434,
-      "source": "street-end",
-      "name": "street-end_to_LA-020<->LA-020_to_street-end",
-      "target": "LA-020",
-      "mean": 4.144749010375,
-      "variance": 5.46292622764284,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 53,
-      "stdev": 3.168784040933605,
-      "source": "street-end",
-      "name": "A045_to_street-end<->street-end_to_A045",
-      "target": "A045",
-      "mean": 8.175166448603774,
-      "variance": 10.041192298075506,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 113,
-      "stdev": 0.10234276713304459,
-      "source": "LC-009",
-      "name": "LC-009_to_C064",
-      "target": "C064",
-      "mean": 6.044726732106195,
-      "variance": 0.010474041984448592,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "LC-009",
-      "target": "C063-1"
-    },
-    {
-      "n_runs": 130,
-      "stdev": 0.13563865376461745,
-      "source": "LC-009",
-      "name": "C062_to_LC-009",
-      "target": "C062",
-      "mean": 2.2596114812,
-      "variance": 0.018397844395077773,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 113,
-      "stdev": 0.09903938962565528,
-      "source": "C063-1",
-      "name": "C063-1_to_C065",
-      "target": "C065",
-      "mean": 5.977801451823009,
-      "variance": 0.009808800697422355,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 129,
-      "stdev": 0.14091683815383432,
-      "source": "C063-1",
-      "name": "LC-008_to_C063-1",
-      "target": "LC-008",
-      "mean": 2.2472854370852713,
-      "variance": 0.019857555275273938,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "init_3",
-      "target": "C020"
-    },
-    {
-      "connection_lane": true,
-      "source": "init_8",
-      "target": "C020"
-    },
-    {
-      "n_runs": 63,
-      "stdev": 0.7680262630331295,
-      "source": "A045",
-      "name": "LA-017_to_A045<->A045_to_LA-017",
-      "target": "LA-017",
-      "mean": 7.799948495793651,
-      "variance": 0.5898643407086338,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 9,
-      "stdev": 0.26355405566400564,
-      "source": "B047",
-      "name": "B047_to_B049<->B049_to_B047",
-      "target": "B049",
-      "mean": 3.183276157,
-      "variance": 0.06946074025694578,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 26,
-      "stdev": 0.5282449787467927,
-      "source": "B047",
-      "name": "B045_to_B047<->B047_to_B045",
-      "target": "B045",
-      "mean": 4.859478677384616,
-      "variance": 0.27904275757119945,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 32,
-      "stdev": 0.3486779670264352,
-      "source": "LB-026",
-      "name": "LB-026_to_B027<->B027_to_LB-026",
-      "target": "B027",
-      "mean": 2.94302276240625,
-      "variance": 0.12157632468968785,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 30,
-      "stdev": 0.43470510644685656,
-      "source": "LB-026",
-      "name": "B025_to_LB-026<->LB-026_to_B025",
-      "target": "B025",
-      "mean": 3.0962226851,
-      "variance": 0.1889685295709729,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "LB-026",
-      "target": "B022"
-    },
-    {
-      "n_runs": 53,
-      "stdev": 0.22010748330613036,
-      "source": "LC-020",
-      "name": "LC-020_to_C-stairs-2",
-      "target": "C-stairs-2",
-      "mean": 5.68808728954717,
-      "variance": 0.04844730420735845,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 31,
-      "stdev": 1.0766713657113085,
-      "source": "LC-020",
-      "name": "LC-018_to_LC-020",
-      "target": "LC-018",
-      "mean": 7.781632743967742,
-      "variance": 1.1592212297426543,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 16,
-      "stdev": 0.4203443775119805,
-      "source": "INT-B003",
-      "name": "INT-B003_to_B045<->B045_to_INT-B003",
-      "target": "B045",
-      "mean": 4.0185344888125005,
-      "variance": 0.1766893957059344,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 14,
-      "stdev": 0.3070557543266626,
-      "source": "INT-B003",
-      "name": "INT-B003_to_B044-1<->B044-1_to_INT-B003",
-      "target": "B044-1",
-      "mean": 3.8196426536428567,
-      "variance": 0.09428323626511578,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 15,
-      "stdev": 0.24439440368367268,
-      "source": "INT-B003",
-      "name": "LB-040_to_INT-B003",
-      "target": "LB-040",
-      "mean": 2.3639412360666667,
-      "variance": 0.059728624551897966,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 31,
-      "stdev": 0.29465347632715655,
-      "source": "INT-B003",
-      "name": "LB-041_to_INT-B003<->INT-B003_to_LB-041",
-      "target": "LB-041",
-      "mean": 2.4444574674838706,
-      "variance": 0.08682067111167821,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 16,
-      "stdev": 0.3817525074178246,
-      "source": "LB-031",
-      "name": "INT-B002_to_LB-031<->LB-031_to_INT-B002",
-      "target": "INT-B002",
-      "mean": 3.0760471564375,
-      "variance": 0.14573497691979626,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 8,
-      "stdev": 0.03493865927450809,
-      "source": "LB-031",
-      "name": "LB-031_to_B032",
-      "target": "B032",
-      "mean": 3.096743127125,
-      "variance": 0.00122070991190017,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "LB-031",
-      "target": "B029"
-    },
-    {
-      "n_runs": 10,
-      "stdev": 0.10878948757927383,
-      "source": "LC-050",
-      "name": "LC-050_to_INT-C001",
-      "target": "INT-C001",
-      "mean": 2.7574493688,
-      "variance": 0.011835152607760975,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 93,
-      "stdev": 1.276052321866076,
-      "source": "LC-050",
-      "name": "INT-C009_to_LC-050",
-      "target": "INT-C009",
-      "mean": 6.738429878698924,
-      "variance": 1.6283095281398037,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 18,
-      "stdev": 0.4792438272709094,
-      "source": "B037",
-      "name": "B037_to_B039<->B039_to_B037",
-      "target": "B039",
-      "mean": 3.969578964666666,
-      "variance": 0.22967464597726925,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 17,
-      "stdev": 0.40541681175736266,
-      "source": "B037",
-      "name": "B035_to_B037<->B037_to_B035",
-      "target": "B035",
-      "mean": 3.2673380395294114,
-      "variance": 0.16436279125550482,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B037",
-      "target": "B036"
-    },
-    {
-      "n_runs": 21,
-      "stdev": 0.40781661294337734,
-      "source": "LC-016",
-      "name": "LC-016_to_C-stairs-1",
-      "target": "C-stairs-1",
-      "mean": 4.428430836285714,
-      "variance": 0.16631438979260846,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 44,
-      "stdev": 0.31178770102825915,
-      "source": "LC-016",
-      "name": "INT-C002_to_LC-016",
-      "target": "INT-C002",
-      "mean": 9.52512762290909,
-      "variance": 0.0972115705124871,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 24,
-      "stdev": 0.5870035775876136,
-      "source": "B062",
-      "name": "B060-2_to_B062<->B062_to_B060-2",
-      "target": "B060-2",
-      "mean": 5.802122085291667,
-      "variance": 0.34457320010065745,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 15,
-      "stdev": 1.114679561987034,
-      "source": "B062",
-      "name": "B062_to_B064<->B064_to_B062",
-      "target": "B064",
-      "mean": 9.077769050466667,
-      "variance": 1.242510525911606,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B041",
-      "target": "B038-2"
-    },
-    {
-      "n_runs": 28,
-      "stdev": 0.3952486518511211,
-      "source": "B041",
-      "name": "B041_to_LB-041<->LB-041_to_B041",
-      "target": "LB-041",
-      "mean": 2.931152822535714,
-      "variance": 0.15622149679012876,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 21,
-      "stdev": 0.3755739290836503,
-      "source": "B041",
-      "name": "B039_to_B041<->B041_to_B039",
-      "target": "B039",
-      "mean": 6.1278480561904765,
-      "variance": 0.14105577620733076,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_10"
-    },
-    {
-      "n_runs": 280,
-      "stdev": 1.4927038535592434,
-      "source": "C020",
-      "name": "C020_to_LC-002<->LC-002_to_C020",
-      "target": "LC-002",
-      "mean": 2.4380164643928572,
-      "variance": 2.228164794430615,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_12"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_27"
-    },
-    {
-      "n_runs": 162,
-      "stdev": 1.8118811824159935,
-      "source": "C020",
-      "name": "C020_to_LC-001<->LC-001_to_C020",
-      "target": "LC-001",
-      "mean": 1.8245436753209878,
-      "variance": 3.2829134191931786,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_4"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_21"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_20"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_6"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_25"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_26"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_16"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_13"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_14"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_5"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_23"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_29"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_9"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_1"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_19"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_11"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_30"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_15"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_22"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_17"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_18"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_7"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_2"
-    },
-    {
-      "connection_lane": true,
-      "source": "C020",
-      "target": "init_28"
-    },
-    {
-      "n_runs": 25,
-      "stdev": 0.2966691030626899,
-      "source": "B009",
-      "name": "B007-2_to_B009<->B009_to_B007-2",
-      "target": "B007-2",
-      "mean": 2.39680221356,
-      "variance": 0.08801255671202092,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 31,
-      "stdev": 0.5046069042710131,
-      "source": "B009",
-      "name": "B009_to_B011<->B011_to_B009",
-      "target": "B011",
-      "mean": 4.664190608096775,
-      "variance": 0.25462812783797534,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B009",
-      "target": "B014-1"
-    },
-    {
-      "n_runs": 12,
-      "stdev": 0.10833295091701725,
-      "source": "B032",
-      "name": "B032_to_B034",
-      "target": "B034",
-      "mean": 5.367487290250001,
-      "variance": 0.011736028254388868,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B032",
-      "target": "B031"
-    },
-    {
-      "n_runs": 32,
-      "stdev": 0.6719132713818533,
-      "source": "B019",
-      "name": "B017_to_B019<->B019_to_B017",
-      "target": "B017",
-      "mean": 5.8597653863125,
-      "variance": 0.45146744425906404,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B019",
-      "target": "B016-2"
-    },
-    {
-      "n_runs": 21,
-      "stdev": 0.5178536133616836,
-      "source": "B019",
-      "name": "B019_to_LB-022<->LB-022_to_B019",
-      "target": "LB-022",
-      "mean": 4.146879726190476,
-      "variance": 0.26817236487175206,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 14,
-      "stdev": 0.6308131082566728,
-      "source": "B002",
-      "name": "B016-2_to_B002<->B002_to_B016-2",
-      "target": "B016-2",
-      "mean": 4.8950405072142855,
-      "variance": 0.3979251775484448,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 220,
-      "stdev": 0.02122562392863487,
-      "source": "B002",
-      "name": "B002_to_B018<->B018_to_B002",
-      "target": "B018",
-      "mean": 0.019638920209090905,
-      "variance": 0.00045052711115983713,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B002",
-      "target": "LB-022"
-    },
-    {
-      "connection_lane": true,
-      "source": "B063",
-      "target": "B060-2"
-    },
-    {
-      "n_runs": 23,
-      "stdev": 0.4102585821624989,
-      "source": "B063",
-      "name": "B061_to_B063<->B063_to_B061",
-      "target": "B061",
-      "mean": 4.923809325043478,
-      "variance": 0.16831210423798385,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 15,
-      "stdev": 0.3506280800563086,
-      "source": "LB-040",
-      "name": "B038-2_to_LB-040",
-      "target": "B038-2",
-      "mean": 2.9917434350666667,
-      "variance": 0.12294005052397314,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "LB-040",
-      "target": "LB-041"
-    },
-    {
-      "n_runs": 11,
-      "stdev": 0.38842045203594305,
-      "source": "B014-1",
-      "name": "B010_to_B014-1",
-      "target": "B010",
-      "mean": 3.3782918619090907,
-      "variance": 0.15087044755980633,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B014-1",
-      "target": "B007-2"
-    },
-    {
-      "n_runs": 16,
-      "stdev": 0.6753234452914267,
-      "source": "B014-1",
-      "name": "B014-1_to_B014-2",
-      "target": "B014-2",
-      "mean": 5.8127618121875,
-      "variance": 0.4560617557602826,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 18,
-      "stdev": 0.2064377362467704,
-      "source": "A-stairs-main",
-      "name": "LA-001_to_A-stairs-main",
-      "target": "LA-001",
-      "mean": 1.8999691060555555,
-      "variance": 0.04261653894669114,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 5,
-      "stdev": 0.7129536149766154,
-      "source": "A-stairs-main",
-      "name": "A-stairs-main_to_A-main-entrance",
-      "target": "A-main-entrance",
-      "mean": 5.9589914372,
-      "variance": 0.5083028571082239,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "C012",
-      "target": "LC-015"
-    },
-    {
-      "n_runs": 348,
-      "stdev": 0.4960684374673402,
-      "source": "C012",
-      "name": "C014-2_to_C012<->C012_to_C014-2",
-      "target": "C014-2",
-      "mean": 4.024001160770116,
-      "variance": 0.2460838946512884,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 81,
-      "stdev": 1.736444838303791,
-      "source": "C012",
-      "name": "C012_to_INT-C002<->INT-C002_to_C012",
-      "target": "INT-C002",
-      "mean": 5.681043853185185,
-      "variance": 3.0152406764718784,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 44,
-      "stdev": 0.3420328019736656,
-      "source": "C-stairs-1",
-      "name": "C-stairs-1_to_LC-018",
-      "target": "LC-018",
-      "mean": 3.5977762646818183,
-      "variance": 0.11698643762595674,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 23,
-      "stdev": 3.7570782284436195,
-      "source": "INT-B005",
-      "name": "B067_to_INT-B005<->INT-B005_to_B067",
-      "target": "B067",
-      "mean": 7.146844238,
-      "variance": 14.115636814645047,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 24,
-      "stdev": 3.8957521312827197,
-      "source": "INT-B005",
-      "name": "B064_to_INT-B005<->INT-B005_to_B064",
-      "target": "B064",
-      "mean": 7.292133304499998,
-      "variance": 15.176884668393853,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 24,
-      "stdev": 0.5277641179825617,
-      "source": "B060-2",
-      "name": "B060-1_to_B060-2<->B060-2_to_B060-1",
-      "target": "B060-1",
-      "mean": 4.9770145385,
-      "variance": 0.27853496422991136,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 18,
-      "stdev": 0.6953688158429869,
-      "source": "LA-001",
-      "name": "LA-001_to_A-main-entrance<->A-main-entrance_to_LA-001",
-      "target": "A-main-entrance",
-      "mean": 8.180986437555555,
-      "variance": 0.48353779004687786,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 145,
-      "stdev": 0.4746777244273612,
-      "source": "LA-001",
-      "name": "INT-C007_to_LA-001<->LA-001_to_INT-C007",
-      "target": "INT-C007",
-      "mean": 3.0903589965241376,
-      "variance": 0.2253189420675379,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B064",
-      "target": "B067"
-    },
-    {
-      "connection_lane": true,
-      "source": "LC-010",
-      "target": "C016-1"
-    },
-    {
-      "n_runs": 288,
-      "stdev": 0.5000038593551748,
-      "source": "LC-010",
-      "name": "LC-010_to_C015",
-      "target": "C015",
-      "mean": 4.293509746322917,
-      "variance": 0.2500038593700694,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 279,
-      "stdev": 0.5664810865048046,
-      "source": "LC-010",
-      "name": "C017_to_LC-010",
-      "target": "C017",
-      "mean": 5.359942385709678,
-      "variance": 0.32090082136766385,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 16,
-      "stdev": 0.5893911654155851,
-      "source": "B021",
-      "name": "B021_to_B025<->B025_to_B021",
-      "target": "B025",
-      "mean": 5.8506823195625,
-      "variance": 0.34738194586994164,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B021",
-      "target": "B018"
-    },
-    {
-      "n_runs": 20,
-      "stdev": 0.23174894072157448,
-      "source": "B021",
-      "name": "LB-022_to_B021<->B021_to_LB-022",
-      "target": "LB-022",
-      "mean": 1.7857359829500001,
-      "variance": 0.053707571525571846,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 30,
-      "stdev": 0.265201539151529,
-      "source": "B055",
-      "name": "B055_to_B057<->B057_to_B055",
-      "target": "B057",
-      "mean": 2.429672279233333,
-      "variance": 0.07033185636833997,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B055",
-      "target": "LB-057"
-    },
-    {
-      "n_runs": 16,
-      "stdev": 0.6586797647069411,
-      "source": "B055",
-      "name": "B053_to_B055<->B055_to_B053",
-      "target": "B053",
-      "mean": 5.507107129812501,
-      "variance": 0.43385903243439133,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 91,
-      "stdev": 0.06381148750582687,
-      "source": "LC-034",
-      "name": "C064_to_LC-034",
-      "target": "C064",
-      "mean": 3.3230134303516485,
-      "variance": 0.004071905937706299,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 85,
-      "stdev": 0.10403139260714436,
-      "source": "LC-034",
-      "name": "LC-034_to_INT-C004",
-      "target": "INT-C004",
-      "mean": 2.1455346123647057,
-      "variance": 0.010822530647781811,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "LC-034",
-      "target": "LC-035"
-    },
-    {
-      "connection_lane": true,
-      "source": "B016-1",
-      "target": "B017"
-    },
-    {
-      "n_runs": 29,
-      "stdev": 0.48410884927241615,
-      "source": "B016-1",
-      "name": "B016-1_to_B016-2<->B016-2_to_B016-1",
-      "target": "B016-2",
-      "mean": 4.700328726758621,
-      "variance": 0.23436137794386294,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 32,
-      "stdev": 0.2540813995333713,
-      "source": "B016-1",
-      "name": "LB-019_to_B016-1<->B016-1_to_LB-019",
-      "target": "LB-019",
-      "mean": 1.90190485128125,
-      "variance": 0.06455735758883664,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "C013-1",
-      "target": "C014-1"
-    },
-    {
-      "n_runs": 424,
-      "stdev": 0.5277348868821992,
-      "source": "C013-1",
-      "name": "LC-004_to_C013-1<->C013-1_to_LC-004",
-      "target": "LC-004",
-      "mean": 4.491923823804245,
-      "variance": 0.27850411083256754,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 282,
-      "stdev": 0.5572728572191759,
-      "source": "C013-1",
-      "name": "C013-1_to_C013-2",
-      "target": "C013-2",
-      "mean": 5.661489860780142,
-      "variance": 0.310553037393224,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 3,
-      "stdev": 0.1317466223626642,
-      "source": "INT-B001",
-      "name": "B014-2_to_INT-B001<->INT-B001_to_B014-2",
-      "target": "B014-2",
-      "mean": 3.942045144,
-      "variance": 0.017357172503970453,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 3,
-      "stdev": 0.22949017677666278,
-      "source": "INT-B001",
-      "name": "B011_to_INT-B001<->INT-B001_to_B011",
-      "target": "B011",
-      "mean": 3.7122111136666667,
-      "variance": 0.052665741236983935,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 14,
-      "stdev": 0.4630038468390251,
-      "source": "INT-B001",
-      "name": "INT-B001_to_LB-019<->LB-019_to_INT-B001",
-      "target": "LB-019",
-      "mean": 3.304779390071429,
-      "variance": 0.21437256218773543,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 12,
-      "stdev": 0.4404587495046744,
-      "source": "INT-B001",
-      "name": "INT-B001_to_B015<->B015_to_INT-B001",
-      "target": "B015",
-      "mean": 3.5099762075,
-      "variance": 0.19400391001522152,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 32,
-      "stdev": 0.23946360096151037,
-      "source": "B017",
-      "name": "B015_to_B017<->B017_to_B015",
-      "target": "B015",
-      "mean": 1.79742680965625,
-      "variance": 0.05734281618545347,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 59,
-      "stdev": 0.9623841025808558,
-      "source": "LA-008",
-      "name": "LA-007_to_LA-008<->LA-008_to_LA-007",
-      "target": "LA-007",
-      "mean": 7.244177524694916,
-      "variance": 0.9261831609003592,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B034",
-      "target": "B033"
-    },
-    {
-      "n_runs": 23,
-      "stdev": 0.43008668539398065,
-      "source": "B034",
-      "name": "B034_to_LB-034<->LB-034_to_B034",
-      "target": "LB-034",
-      "mean": 3.5704299786956524,
-      "variance": 0.18497455695318088,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 22,
-      "stdev": 0.40280431563099695,
-      "source": "INT-B004",
-      "name": "INT-B004_to_B061<->B061_to_INT-B004",
-      "target": "B061",
-      "mean": 3.3558506070909093,
-      "variance": 0.1622513166909558,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 22,
-      "stdev": 0.4278558488440607,
-      "source": "INT-B004",
-      "name": "INT-B004_to_B060-1<->B060-1_to_INT-B004",
-      "target": "B060-1",
-      "mean": 3.3982197952272726,
-      "variance": 0.1830606273900717,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 15,
-      "stdev": 0.10626338533824996,
-      "source": "INT-B004",
-      "name": "LB-059_to_INT-B004<->INT-B004_to_LB-059",
-      "target": "LB-059",
-      "mean": 2.4772770749333333,
-      "variance": 0.011291907063545397,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "LC-002",
-      "target": "LC-001"
-    },
-    {
-      "n_runs": 366,
-      "stdev": 0.3259712033021038,
-      "source": "LC-002",
-      "name": "LC-002_to_INT-C001<->INT-C001_to_LC-002",
-      "target": "INT-C001",
-      "mean": 1.9520006418142075,
-      "variance": 0.10625722538222147,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 28,
-      "stdev": 0.6190827562933051,
-      "source": "B046",
-      "name": "B048_to_B046<->B046_to_B048",
-      "target": "B048",
-      "mean": 0.9034966028928572,
-      "variance": 0.3832634591397158,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 30,
-      "stdev": 0.22475169413402651,
-      "source": "B046",
-      "name": "B046_to_B050-1<->B050-1_to_B046",
-      "target": "B050-1",
-      "mean": 2.0896828877,
-      "variance": 0.05051332401611501,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 28,
-      "stdev": 0.4559386053861146,
-      "source": "LB-059",
-      "name": "LB-057_to_LB-059<->LB-059_to_LB-057",
-      "target": "LB-057",
-      "mean": 3.9751967369285715,
-      "variance": 0.20788001188143512,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "LC-031",
-      "target": "C063-2"
-    },
-    {
-      "n_runs": 116,
-      "stdev": 0.12323670300604127,
-      "source": "LC-031",
-      "name": "C060_to_LC-031",
-      "target": "C060",
-      "mean": 7.2135694578448275,
-      "variance": 0.015187284967799222,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 117,
-      "stdev": 0.10708764489663612,
-      "source": "LC-031",
-      "name": "LC-031_to_C062",
-      "target": "C062",
-      "mean": 3.539928857786325,
-      "variance": 0.011467763689508036,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 3,
-      "stdev": 0.4413385459097223,
-      "source": "LA-020",
-      "name": "LA-020_to_LB-002",
-      "target": "LB-002",
-      "mean": 1.8883277873333333,
-      "variance": 0.19477971210570807,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 17,
-      "stdev": 0.22727481476256658,
-      "source": "LA-020",
-      "name": "LA-020_to_LB-001<->LB-001_to_LA-020",
-      "target": "LB-001",
-      "mean": 1.5527356072941176,
-      "variance": 0.051653841425358955,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 24,
-      "stdev": 0.4914276739556957,
-      "source": "B035",
-      "name": "B033_to_B035<->B035_to_B033",
-      "target": "B033",
-      "mean": 4.601992879916667,
-      "variance": 0.24150115872950556,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B035",
-      "target": "LB-034"
-    },
-    {
-      "n_runs": 23,
-      "stdev": 0.38753922590266204,
-      "source": "B038-2",
-      "name": "B038-1_to_B038-2<->B038-2_to_B038-1",
-      "target": "B038-1",
-      "mean": 5.979852206565217,
-      "variance": 0.15018665161323452,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "C060",
-      "target": "C061-1"
-    },
-    {
-      "n_runs": 28,
-      "stdev": 0.40531936672205326,
-      "source": "B051",
-      "name": "B049_to_B051<->B051_to_B049",
-      "target": "B049",
-      "mean": 3.524651358464286,
-      "variance": 0.1642837890399663,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B051",
-      "target": "B050-1"
-    },
-    {
-      "n_runs": 4,
-      "stdev": 0.7002600722208103,
-      "source": "B051",
-      "name": "B051_to_B053<->B053_to_B051",
-      "target": "B053",
-      "mean": 4.583096201,
-      "variance": 0.4903641687466945,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 93,
-      "stdev": 0.5518215535905674,
-      "source": "LA-005",
-      "name": "LA-005_to_mensa-entrance",
       "target": "mensa-entrance",
-      "mean": 11.661353988247312,
-      "variance": 0.30450702700710747,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 8,
-      "stdev": 0.1317461732072143,
-      "source": "LA-005",
-      "name": "stairs-mensa_to_LA-005",
-      "target": "stairs-mensa",
-      "mean": 3.99312843575,
-      "variance": 0.01735705415474531,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 40,
-      "stdev": 0.2385121787601672,
-      "source": "INT-C005",
-      "name": "LC-048_to_INT-C005",
-      "target": "LC-048",
-      "mean": 2.264600445725,
-      "variance": 0.05688805941692195,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 3,
-      "stdev": 5.028384260658858,
-      "source": "INT-C005",
-      "name": "INT-C005_to_INT-C009",
-      "target": "INT-C009",
-      "mean": 20.287254082333334,
-      "variance": 25.28464827284173,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 4,
-      "stdev": 0.49101124291134574,
-      "source": "INT-C005",
-      "name": "LC-047_to_INT-C005",
-      "target": "LC-047",
-      "mean": 2.173221377,
-      "variance": 0.24109204066534456,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 19,
-      "stdev": 0.7175718381692792,
-      "source": "B050-2",
-      "name": "B050-2_to_LB-057<->LB-057_to_B050-2",
-      "target": "LB-057",
-      "mean": 4.75287733131579,
-      "variance": 0.5149093429336382,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B050-2",
-      "target": "B053"
-    },
-    {
-      "n_runs": 19,
-      "stdev": 0.4299694785334224,
-      "source": "B050-2",
-      "name": "B050-1_to_B050-2<->B050-2_to_B050-1",
-      "target": "B050-1",
-      "mean": 4.483946201210526,
-      "variance": 0.18487375247030316,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 16,
-      "stdev": 0.4180140773496961,
-      "source": "B029",
-      "name": "B029_to_B031<->B031_to_B029",
-      "target": "B031",
-      "mean": 3.301563018625,
-      "variance": 0.1747357688625177,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 17,
-      "stdev": 0.32028225006328154,
-      "source": "B029",
-      "name": "INT-B002_to_B029<->B029_to_INT-B002",
-      "target": "INT-B002",
-      "mean": 3.0749070197058823,
-      "variance": 0.1025807197055984,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 173,
-      "stdev": 0.2660578733483185,
-      "source": "LC-001",
-      "name": "LC-001_to_INT-C001<->INT-C001_to_LC-001",
-      "target": "INT-C001",
-      "mean": 2.3612838106589598,
-      "variance": 0.07078679197062988,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "LB-025",
-      "target": "B025"
-    },
-    {
-      "n_runs": 10,
-      "stdev": 0.9264264087562353,
-      "source": "LB-025",
-      "name": "B018_to_LB-025<->LB-025_to_B018",
-      "target": "B018",
-      "mean": 6.949155471100001,
-      "variance": 0.8582658908409752,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 30,
-      "stdev": 0.40208481764731396,
-      "source": "LB-025",
-      "name": "LB-025_to_B022<->B022_to_LB-025",
-      "target": "B022",
-      "mean": 3.1873155384,
-      "variance": 0.16167220058247372,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 109,
-      "stdev": 0.10702450093531103,
-      "source": "LC-035",
-      "name": "C065_to_LC-035",
-      "target": "C065",
-      "mean": 3.306623994412844,
-      "variance": 0.011454243800452391,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 83,
-      "stdev": 0.08886668960255596,
-      "source": "LC-035",
-      "name": "LC-035_to_INT-C004",
-      "target": "INT-C004",
-      "mean": 2.235544084072289,
-      "variance": 0.007897288520917027,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "LB-019",
-      "target": "B015"
-    },
-    {
-      "n_runs": 31,
-      "stdev": 2.3193436806393644,
-      "source": "INT-C002",
-      "name": "INT-C002_to_INT-C007<->INT-C007_to_INT-C002",
-      "target": "INT-C007",
-      "mean": 13.421646514032258,
-      "variance": 5.379355108921754,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 1,
-      "stdev": 0.0,
-      "source": "INT-C002",
-      "name": "INT-C002_to_C002",
-      "target": "C002",
-      "mean": 10.240971067,
-      "variance": 0.0,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 81,
-      "stdev": 1.7441241764218238,
-      "source": "INT-C002",
-      "name": "LC-015_to_INT-C002<->INT-C002_to_LC-015",
-      "target": "LC-015",
-      "mean": 5.675601412864197,
-      "variance": 3.0419691427791054,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 290,
-      "stdev": 0.2371182782833161,
-      "source": "C015",
-      "name": "C015_to_LC-004",
-      "target": "LC-004",
-      "mean": 2.3804357160793104,
-      "variance": 0.05622507789604414,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "C015",
-      "target": "LC-003"
-    },
-    {
-      "n_runs": 6,
-      "stdev": 0.13537759415408276,
-      "source": "LB-002",
-      "name": "LB-002_to_B006",
-      "target": "B006",
-      "mean": 2.9090978755,
-      "variance": 0.018327092998947542,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "LB-002",
-      "target": "LB-001"
-    },
-    {
-      "connection_lane": true,
-      "source": "LB-057",
-      "target": "B057"
-    },
-    {
-      "n_runs": 6,
-      "stdev": 0.4265723392399595,
-      "source": "LA-017",
-      "name": "LA-015_to_LA-017<->LA-017_to_LA-015",
-      "target": "LA-015",
-      "mean": 10.463646713666668,
-      "variance": 0.18196396060465111,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "C065",
-      "target": "C064"
-    },
-    {
-      "connection_lane": true,
-      "source": "LC-047",
-      "target": "LC-048"
-    },
-    {
-      "n_runs": 280,
-      "stdev": 0.2831430177155192,
-      "source": "INT-C001",
-      "name": "INT-C001_to_C018-1<->C018-1_to_INT-C001",
-      "target": "C018-1",
-      "mean": 2.3892896823714285,
-      "variance": 0.08016996848105082,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 323,
-      "stdev": 0.4158025886604847,
-      "source": "INT-C001",
-      "name": "INT-C001_to_C021<->C021_to_INT-C001",
-      "target": "C021",
-      "mean": 2.5264848675851392,
-      "variance": 0.17289179273676022,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 331,
-      "stdev": 0.40921062945754255,
-      "source": "LC-006",
-      "name": "LC-006_to_LC-015<->LC-015_to_LC-006",
-      "target": "LC-015",
-      "mean": 4.097496402347431,
-      "variance": 0.1674533392610382,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "LC-006",
-      "target": "C014-2"
-    },
-    {
-      "n_runs": 284,
-      "stdev": 0.2180635380420458,
-      "source": "LC-006",
-      "name": "C013-2_to_LC-006",
-      "target": "C013-2",
-      "mean": 2.080497793521127,
-      "variance": 0.04755170662341476,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "LC-004",
-      "target": "C016-2"
-    },
-    {
-      "n_runs": 38,
-      "stdev": 0.323908962790231,
-      "source": "LC-048",
-      "name": "LC-046_to_LC-048",
-      "target": "LC-046",
-      "mean": 3.3866912056578946,
-      "variance": 0.10491701617584326,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 34,
-      "stdev": 0.6159725512151354,
-      "source": "B012",
-      "name": "B012_to_B010",
-      "target": "B010",
-      "mean": 0.5927552243235295,
-      "variance": 0.3794221838504826,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B012",
-      "target": "B007-1"
-    },
-    {
-      "n_runs": 14,
-      "stdev": 0.3781973398859227,
-      "source": "B012",
-      "name": "B008-2_to_B012<->B012_to_B008-2",
-      "target": "B008-2",
-      "mean": 2.4952019874999998,
-      "variance": 0.14303322789678813,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B010",
-      "target": "B007-1"
-    },
-    {
-      "n_runs": 1,
-      "stdev": 0.0,
-      "source": "LB-034",
-      "name": "LB-034_to_B036",
-      "target": "B036",
-      "mean": 3.232238031,
-      "variance": 0.0,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 47,
-      "stdev": 0.7865293401673442,
-      "source": "LA-022",
-      "name": "LA-022_to_A049<->A049_to_LA-022",
-      "target": "A049",
-      "mean": 7.320044176808511,
-      "variance": 0.6186284029440778,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 20,
-      "stdev": 0.5065999815944373,
-      "source": "B001",
-      "name": "B001_to_B003<->B003_to_B001",
-      "target": "B003",
-      "mean": 5.7386393979,
-      "variance": 0.2566435413514842,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B001",
-      "target": "B006"
-    },
-    {
-      "n_runs": 12,
-      "stdev": 0.271787355850971,
-      "source": "B001",
-      "name": "LB-001_to_B001<->B001_to_LB-001",
-      "target": "LB-001",
-      "mean": 1.8836507673333334,
-      "variance": 0.07386836680046235,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 372,
-      "stdev": 0.4890086884278146,
-      "source": "C016-1",
-      "name": "C016-1_to_LC-003<->LC-003_to_C016-1",
-      "target": "LC-003",
-      "mean": 4.145264823104839,
-      "variance": 0.23912949735789144,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 361,
-      "stdev": 0.6936720574197581,
-      "source": "C016-1",
-      "name": "LC-007_to_C016-1<->C016-1_to_LC-007",
-      "target": "LC-007",
-      "mean": 5.574140393235457,
-      "variance": 0.4811809232449602,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 32,
-      "stdev": 0.3513579569662265,
-      "source": "B024",
-      "name": "B022_to_B024<->B024_to_B022",
-      "target": "B022",
-      "mean": 2.8048528233125003,
-      "variance": 0.12345241392348068,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B024",
-      "target": "B027"
-    },
-    {
-      "n_runs": 4,
-      "stdev": 0.0973900424353287,
-      "source": "B024",
-      "name": "B024_to_INT-B002<->INT-B002_to_B024",
-      "target": "INT-B002",
-      "mean": 3.970295938,
-      "variance": 0.009484820365555124,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 17,
-      "stdev": 0.28122740322630285,
-      "source": "INT-C003",
-      "name": "INT-C003_to_C059",
-      "target": "C059",
-      "mean": 9.372672235529413,
-      "variance": 0.07908885232540953,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 1,
-      "stdev": 0.0,
-      "source": "INT-C003",
-      "name": "LC-023_to_INT-C003",
-      "target": "LC-023",
-      "mean": 3.142602644,
-      "variance": 0.0,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 4,
-      "stdev": 0.15373498199274235,
-      "source": "INT-C003",
-      "name": "INT-C003_to_LC-026",
-      "target": "LC-026",
-      "mean": 9.896399281,
-      "variance": 0.023634444688308817,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 3,
-      "stdev": 0.023283131387805515,
-      "source": "INT-C003",
-      "name": "LC-022_to_INT-C003",
-      "target": "LC-022",
-      "mean": 4.233855168333333,
-      "variance": 0.0005421042072218144,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B039",
-      "target": "B038-1"
-    },
-    {
-      "connection_lane": true,
-      "source": "C021",
-      "target": "C018-1"
-    },
-    {
-      "n_runs": 201,
-      "stdev": 0.5868888273081571,
-      "source": "C021",
-      "name": "C021_to_C019<->C019_to_C021",
-      "target": "C019",
-      "mean": 5.473516561940299,
-      "variance": 0.3444384956191438,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 427,
-      "stdev": 0.2782573280683939,
-      "source": "LC-003",
-      "name": "LC-003_to_C016-2<->C016-2_to_LC-003",
-      "target": "C016-2",
-      "mean": 2.4652133829882907,
-      "variance": 0.07742714062376181,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 117,
-      "stdev": 0.5856309026206482,
-      "source": "A049",
-      "name": "A049_to_A053<->A053_to_A049",
-      "target": "A053",
-      "mean": 5.005469553760683,
-      "variance": 0.34296355410427515,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 34,
-      "stdev": 3.271350951017127,
-      "source": "INT-C004",
-      "name": "INT-C004_to_LC-046",
-      "target": "LC-046",
-      "mean": 4.126319380235294,
-      "variance": 10.70173704472066,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "C013-2",
-      "target": "LC-005"
-    },
-    {
-      "n_runs": 7,
-      "stdev": 0.630124375775076,
-      "source": "B006",
-      "name": "B006_to_B008-1",
-      "target": "B008-1",
-      "mean": 4.722168319142857,
-      "variance": 0.39705672894592914,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 422,
-      "stdev": 0.5692657345529252,
-      "source": "LC-005",
-      "name": "C014-1_to_LC-005<->LC-005_to_C014-1",
-      "target": "C014-1",
-      "mean": 5.511479277507108,
-      "variance": 0.3240634765360815,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 409,
-      "stdev": 0.24629090863958936,
-      "source": "LC-005",
-      "name": "LC-005_to_C014-2<->C014-2_to_LC-005",
-      "target": "C014-2",
-      "mean": 2.2363100956870414,
-      "variance": 0.06065921167851455,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B014-2",
-      "target": "B011"
-    },
-    {
-      "connection_lane": true,
-      "source": "B003",
-      "target": "B008-1"
-    },
-    {
-      "n_runs": 17,
-      "stdev": 0.45139250929316,
-      "source": "B003",
-      "name": "B003_to_B005<->B005_to_B003",
-      "target": "B005",
-      "mean": 4.5875327562941175,
-      "variance": 0.20375519744597553,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 27,
-      "stdev": 0.09036370570045764,
-      "source": "LC-022",
-      "name": "C-stairs-2_to_LC-022",
-      "target": "C-stairs-2",
-      "mean": 3.783067127333333,
-      "variance": 0.00816559930791892,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "LC-022",
-      "target": "LC-023"
-    },
-    {
-      "n_runs": 22,
-      "stdev": 0.6542220585173067,
-      "source": "B008-2",
-      "name": "B008-1_to_B008-2<->B008-2_to_B008-1",
-      "target": "B008-1",
-      "mean": 4.832920822227273,
-      "variance": 0.42800650185062233,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B008-2",
-      "target": "B005"
-    },
-    {
-      "n_runs": 1,
-      "stdev": 0.0,
-      "source": "LC-023",
-      "name": "C-stairs-2_to_LC-023",
-      "target": "C-stairs-2",
-      "mean": 3.197930626,
-      "variance": 0.0,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 235,
-      "stdev": 0.5561722133384186,
-      "source": "C017",
-      "name": "C019_to_C017",
-      "target": "C019",
-      "mean": 5.596906343417022,
-      "variance": 0.3093275308897554,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "C017",
-      "target": "LC-007"
-    },
-    {
-      "connection_lane": true,
-      "source": "LB-050",
-      "target": "B049"
-    },
-    {
-      "n_runs": 83,
-      "stdev": 0.6192357126005987,
-      "source": "LB-050",
-      "name": "LB-050_to_B048<->B048_to_LB-050",
-      "target": "B048",
-      "mean": 0.469004552313253,
-      "variance": 0.3834528677599713,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 27,
-      "stdev": 0.4133306054144729,
-      "source": "B031",
-      "name": "B031_to_B033<->B033_to_B031",
-      "target": "B033",
-      "mean": 4.429188217814815,
-      "variance": 0.1708421893722947,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 84,
-      "stdev": 0.5809303392174855,
-      "source": "A054",
-      "name": "A054_to_INT-A001<->INT-A001_to_A054",
-      "target": "INT-A001",
-      "mean": 6.860713759928571,
-      "variance": 0.33748005902334277,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 125,
-      "stdev": 0.3850006212336567,
-      "source": "A054",
-      "name": "A053_to_A054<->A054_to_A053",
-      "target": "A053",
-      "mean": 3.223970380384,
-      "variance": 0.1482254783503016,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 15,
-      "stdev": 0.46783169074617925,
-      "source": "B036",
-      "name": "B036_to_B038-1",
-      "target": "B038-1",
-      "mean": 3.7508865804666667,
-      "variance": 0.2188664908664287,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 2,
-      "stdev": 0.7623442892110894,
-      "source": "INT-C007",
-      "name": "INT-C007_to_LC-054",
-      "target": "LC-054",
-      "mean": 3.8205995715,
-      "variance": 0.5811688152927612,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 2,
-      "stdev": 0.23043474102536277,
-      "source": "INT-C007",
-      "name": "C002_to_INT-C007",
-      "target": "C002",
-      "mean": 2.6495799570000003,
-      "variance": 0.053100169871426,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "B060-1",
-      "target": "B061"
-    },
-    {
-      "n_runs": 32,
-      "stdev": 0.4038221894708191,
-      "source": "B007-2",
-      "name": "B007-1_to_B007-2<->B007-2_to_B007-1",
-      "target": "B007-1",
-      "mean": 3.3520896596250003,
-      "variance": 0.16307236070900613,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 171,
-      "stdev": 0.3950996516471661,
-      "source": "INT-A001",
-      "name": "INT-A001_to_LA-015<->LA-015_to_INT-A001",
-      "target": "LA-015",
-      "mean": 3.674691021017544,
-      "variance": 0.156103734731712,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 4,
-      "stdev": 0.21569146294868466,
-      "source": "B027",
-      "name": "B027_to_INT-B002<->INT-B002_to_B027",
-      "target": "INT-B002",
-      "mean": 3.7771558460000003,
-      "variance": 0.046522807188943804,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 49,
-      "stdev": 0.6628065495168918,
-      "source": "C059",
-      "name": "C059_to_C061-2",
-      "target": "C061-2",
-      "mean": 5.544474218755102,
-      "variance": 0.4393125220824879,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "C059",
-      "target": "LC-026"
-    },
-    {
-      "connection_lane": true,
-      "source": "B044-1",
-      "target": "B045"
-    },
-    {
-      "n_runs": 27,
-      "stdev": 0.39801874034635903,
-      "source": "B007-1",
-      "name": "B005_to_B007-1<->B007-1_to_B005",
-      "target": "B005",
-      "mean": 2.508928812296296,
-      "variance": 0.1584189176669024,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 423,
-      "stdev": 0.466176803578485,
-      "source": "C016-2",
-      "name": "C016-2_to_C014-1<->C014-1_to_C016-2",
-      "target": "C014-1",
-      "mean": 4.425107153269503,
-      "variance": 0.2173208121946534,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 115,
-      "stdev": 0.17288108592836052,
-      "source": "C061-2",
-      "name": "C061-2_to_C061-1",
-      "target": "C061-1",
-      "mean": 6.1772342947043475,
-      "variance": 0.02988786987176917,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 120,
-      "stdev": 0.1197742119215269,
-      "source": "C063-2",
-      "name": "C061-1_to_C063-2",
-      "target": "C061-1",
-      "mean": 7.312642807983333,
-      "variance": 0.014345861841422837,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 121,
-      "stdev": 0.128024198298086,
-      "source": "C063-2",
-      "name": "C063-2_to_LC-008",
-      "target": "LC-008",
-      "mean": 3.5703102760413223,
-      "variance": 0.01639019534986765,
-      "max_n_obstacles": 0
-    },
-    {
-      "n_runs": 13,
-      "stdev": 2.6043003523310064,
-      "source": "stairs-mensa",
+      "variance": 2.8497353669871455,
+      "mean": 2.5489413483440004,
+      "n_runs": 250,
+      "stdev": 1.6881159222598268,
+      "max_n_obstacles": 0,
       "name": "stairs-mensa_to_mensa-entrance<->mensa-entrance_to_stairs-mensa",
+      "source": "stairs-mensa"
+    },
+    {
+      "target": "LA-005",
+      "variance": 0.04573693001579872,
+      "mean": 4.0738122839777775,
+      "n_runs": 90,
+      "stdev": 0.21386194148515233,
+      "max_n_obstacles": 0,
+      "name": "stairs-mensa_to_LA-005",
+      "source": "stairs-mensa"
+    },
+    {
+      "target": "LA-015",
+      "variance": 0.2224570318492655,
+      "mean": 10.245660357432433,
+      "n_runs": 37,
+      "stdev": 0.4716535082550171,
+      "max_n_obstacles": 0,
+      "name": "LA-015_to_LA-017<->LA-017_to_LA-015",
+      "source": "LA-017"
+    },
+    {
+      "target": "A045",
+      "variance": 0.6005564157146773,
+      "mean": 6.836714661878204,
+      "n_runs": 156,
+      "stdev": 0.7749557508107655,
+      "max_n_obstacles": 0,
+      "name": "LA-017_to_A045<->A045_to_LA-017",
+      "source": "LA-017"
+    },
+    {
+      "target": "B039",
+      "source": "B038-1",
+      "connection_lane": true
+    },
+    {
+      "target": "B036",
+      "variance": 0.06643889223511835,
+      "mean": 3.3009398225,
+      "n_runs": 138,
+      "stdev": 0.2577574290590251,
+      "max_n_obstacles": 0,
+      "name": "B036_to_B038-1",
+      "source": "B038-1"
+    },
+    {
+      "target": "B038-2",
+      "variance": 0.14437478057627567,
+      "mean": 5.830684015774703,
+      "n_runs": 253,
+      "stdev": 0.3799668150987342,
+      "max_n_obstacles": 0,
+      "name": "B038-1_to_B038-2<->B038-2_to_B038-1",
+      "source": "B038-1"
+    },
+    {
+      "target": "C021",
+      "source": "C018-1",
+      "connection_lane": true
+    },
+    {
+      "target": "INT-C001",
+      "variance": 0.08969408632040088,
+      "mean": 2.002532077655049,
+      "n_runs": 1119,
+      "stdev": 0.29948970987398027,
+      "max_n_obstacles": 0,
+      "name": "INT-C001_to_C018-1<->C018-1_to_INT-C001",
+      "source": "C018-1"
+    },
+    {
+      "target": "C018-2",
+      "variance": 0.08912494351103471,
+      "mean": 4.7867875014099255,
+      "n_runs": 544,
+      "stdev": 0.2985380101612435,
+      "max_n_obstacles": 0,
+      "name": "C018-1_to_C018-2<->C018-2_to_C018-1",
+      "source": "C018-1"
+    },
+    {
+      "target": "C014-2",
+      "source": "LC-006",
+      "connection_lane": true
+    },
+    {
+      "target": "C013-2",
+      "variance": 0.057474249826470813,
+      "mean": 1.7631498248530761,
+      "n_runs": 1089,
+      "stdev": 0.23973787732953425,
+      "max_n_obstacles": 0,
+      "name": "C013-2_to_LC-006",
+      "source": "LC-006"
+    },
+    {
+      "target": "LC-015",
+      "variance": 0.061338769202813316,
+      "mean": 3.304663588685484,
+      "n_runs": 1116,
+      "stdev": 0.2476666493551631,
+      "max_n_obstacles": 0,
+      "name": "LC-006_to_LC-015<->LC-015_to_LC-006",
+      "source": "LC-006"
+    },
+    {
+      "target": "INT-C001",
+      "variance": 0.1628285788367862,
+      "mean": 2.126904052952338,
+      "n_runs": 1112,
+      "stdev": 0.4035202334911921,
+      "max_n_obstacles": 0,
+      "name": "INT-C001_to_C021<->C021_to_INT-C001",
+      "source": "C021"
+    },
+    {
+      "target": "C019",
+      "variance": 0.2045722593064782,
+      "mean": 4.76343795573913,
+      "n_runs": 575,
+      "stdev": 0.45229664967416927,
+      "max_n_obstacles": 0,
+      "name": "C021_to_C019<->C019_to_C021",
+      "source": "C021"
+    },
+    {
+      "target": "LC-003",
+      "source": "C015",
+      "connection_lane": true
+    },
+    {
+      "target": "LC-004",
+      "variance": 0.04131105048741107,
+      "mean": 1.9546794417220574,
+      "n_runs": 1011,
+      "stdev": 0.2032512004574907,
+      "max_n_obstacles": 0,
+      "name": "C015_to_LC-004",
+      "source": "C015"
+    },
+    {
+      "target": "LC-010",
+      "variance": 0.08043054857434521,
+      "mean": 3.5122518710085107,
+      "n_runs": 940,
+      "stdev": 0.28360280071668054,
+      "max_n_obstacles": 0,
+      "name": "LC-010_to_C015",
+      "source": "C015"
+    },
+    {
+      "target": "B050-2",
+      "variance": 0.03735047264030073,
+      "mean": 4.136054064018868,
+      "n_runs": 265,
+      "stdev": 0.19326270369706808,
+      "max_n_obstacles": 0,
+      "name": "B050-1_to_B050-2<->B050-2_to_B050-1",
+      "source": "B050-1"
+    },
+    {
+      "target": "B051",
+      "source": "B050-1",
+      "connection_lane": true
+    },
+    {
+      "target": "B046",
+      "variance": 0.014439078458936223,
+      "mean": 1.8231558835744048,
+      "n_runs": 336,
+      "stdev": 0.12016271659269452,
+      "max_n_obstacles": 0,
+      "name": "B046_to_B050-1<->B050-1_to_B046",
+      "source": "B050-1"
+    },
+    {
+      "target": "LA-008",
+      "variance": 0.5697451420434152,
+      "mean": 8.071067136185127,
+      "n_runs": 632,
+      "stdev": 0.754814640851259,
+      "max_n_obstacles": 0,
+      "name": "LA-008_to_LA-010<->LA-010_to_LA-008",
+      "source": "LA-010"
+    },
+    {
+      "target": "LA-022",
+      "variance": 0.07791250407773417,
+      "mean": 3.4228951128885448,
+      "n_runs": 323,
+      "stdev": 0.2791281140941094,
+      "max_n_obstacles": 0,
+      "name": "LA-010_to_LA-022<->LA-022_to_LA-010",
+      "source": "LA-010"
+    },
+    {
+      "target": "B033",
+      "variance": 0.046874761816563575,
+      "mean": 3.972598190560345,
+      "n_runs": 348,
+      "stdev": 0.21650580088432636,
+      "max_n_obstacles": 0,
+      "name": "B031_to_B033<->B033_to_B031",
+      "source": "B031"
+    },
+    {
+      "target": "B029",
+      "variance": 0.016961301045866062,
+      "mean": 2.8523524197252748,
+      "n_runs": 182,
+      "stdev": 0.1302355598362677,
+      "max_n_obstacles": 0,
+      "name": "B029_to_B031<->B031_to_B029",
+      "source": "B031"
+    },
+    {
+      "target": "B032",
+      "source": "B031",
+      "connection_lane": true
+    },
+    {
+      "target": "LB-022",
+      "variance": 0.04023594692537139,
+      "mean": 3.6504373349438604,
+      "n_runs": 285,
+      "stdev": 0.20058900001089638,
+      "max_n_obstacles": 0,
+      "name": "B019_to_LB-022<->LB-022_to_B019",
+      "source": "B019"
+    },
+    {
+      "target": "B017",
+      "variance": 0.08419750603740797,
+      "mean": 5.0629029433841275,
+      "n_runs": 315,
+      "stdev": 0.2901680651577771,
+      "max_n_obstacles": 0,
+      "name": "B017_to_B019<->B019_to_B017",
+      "source": "B019"
+    },
+    {
+      "target": "B016-2",
+      "source": "B019",
+      "connection_lane": true
+    },
+    {
+      "target": "C017",
+      "source": "LC-007",
+      "connection_lane": true
+    },
+    {
+      "target": "C018-2",
+      "variance": 0.34112874893757716,
+      "mean": 4.5753594387377055,
+      "n_runs": 1159,
+      "stdev": 0.5840622817282222,
+      "max_n_obstacles": 0,
+      "name": "C018-2_to_LC-007<->LC-007_to_C018-2",
+      "source": "LC-007"
+    },
+    {
+      "target": "C016-1",
+      "variance": 0.5302422233222412,
+      "mean": 4.687946711564422,
+      "n_runs": 1203,
+      "stdev": 0.7281773295854803,
+      "max_n_obstacles": 0,
+      "name": "LC-007_to_C016-1<->C016-1_to_LC-007",
+      "source": "LC-007"
+    },
+    {
+      "target": "B061",
+      "variance": 0.08383313128824434,
+      "mean": 4.4818253816067415,
+      "n_runs": 267,
+      "stdev": 0.2895395159356393,
+      "max_n_obstacles": 0,
+      "name": "B061_to_B063<->B063_to_B061",
+      "source": "B063"
+    },
+    {
+      "target": "B060-2",
+      "source": "B063",
+      "connection_lane": true
+    },
+    {
+      "target": "B065",
+      "variance": 0.09345447068058113,
+      "mean": 5.406752124160376,
+      "n_runs": 318,
+      "stdev": 0.30570323956507417,
+      "max_n_obstacles": 0,
+      "name": "B063_to_B065<->B065_to_B063",
+      "source": "B063"
+    },
+    {
+      "target": "B021",
+      "variance": 0.019984174035272955,
+      "mean": 1.593122255820717,
+      "n_runs": 251,
+      "stdev": 0.14136539192911735,
+      "max_n_obstacles": 0,
+      "name": "LB-022_to_B021<->B021_to_LB-022",
+      "source": "LB-022"
+    },
+    {
+      "target": "B002",
+      "source": "LB-022",
+      "connection_lane": true
+    },
+    {
+      "target": "LB-040",
+      "source": "LB-041",
+      "connection_lane": true
+    },
+    {
+      "target": "INT-B003",
+      "variance": 0.02392470991355378,
+      "mean": 2.0919417852857145,
+      "n_runs": 329,
+      "stdev": 0.15467614526343026,
+      "max_n_obstacles": 0,
+      "name": "LB-041_to_INT-B003<->INT-B003_to_LB-041",
+      "source": "LB-041"
+    },
+    {
+      "target": "B041",
+      "variance": 0.018964225798819973,
+      "mean": 2.6269142420076923,
+      "n_runs": 260,
+      "stdev": 0.13771065971383614,
+      "max_n_obstacles": 0,
+      "name": "B041_to_LB-041<->LB-041_to_B041",
+      "source": "LB-041"
+    },
+    {
+      "target": "B001",
+      "variance": 0.010623381002305716,
+      "mean": 1.6324697383261804,
+      "n_runs": 233,
+      "stdev": 0.10306978704890059,
+      "max_n_obstacles": 0,
+      "name": "LB-001_to_B001<->B001_to_LB-001",
+      "source": "LB-001"
+    },
+    {
+      "target": "LA-020",
+      "variance": 0.012652209996478233,
+      "mean": 1.4759318000344828,
+      "n_runs": 203,
+      "stdev": 0.11248204299566324,
+      "max_n_obstacles": 0,
+      "name": "LA-020_to_LB-001<->LB-001_to_LA-020",
+      "source": "LB-001"
+    },
+    {
+      "target": "LB-002",
+      "source": "LB-001",
+      "connection_lane": true
+    },
+    {
+      "target": "LC-003",
+      "variance": 0.08491100876158139,
+      "mean": 2.0795896866941717,
+      "n_runs": 1527,
+      "stdev": 0.29139493606029154,
+      "max_n_obstacles": 0,
+      "name": "LC-003_to_C016-2<->C016-2_to_LC-003",
+      "source": "C016-2"
+    },
+    {
+      "target": "C014-1",
+      "variance": 0.17523991936327327,
+      "mean": 3.710428988828829,
+      "n_runs": 1443,
+      "stdev": 0.4186166735371075,
+      "max_n_obstacles": 0,
+      "name": "C016-2_to_C014-1<->C014-1_to_C016-2",
+      "source": "C016-2"
+    },
+    {
+      "target": "LC-004",
+      "source": "C016-2",
+      "connection_lane": true
+    },
+    {
+      "target": "INT-B001",
+      "variance": 0.023303985524212437,
+      "mean": 3.839678437904762,
+      "n_runs": 42,
+      "stdev": 0.15265642968513457,
+      "max_n_obstacles": 0,
+      "name": "B014-2_to_INT-B001<->INT-B001_to_B014-2",
+      "source": "B014-2"
+    },
+    {
+      "target": "B014-1",
+      "variance": 0.0662989740600654,
+      "mean": 5.100220393884616,
+      "n_runs": 182,
+      "stdev": 0.25748587157369507,
+      "max_n_obstacles": 0,
+      "name": "B014-1_to_B014-2",
+      "source": "B014-2"
+    },
+    {
+      "target": "B011",
+      "source": "B014-2",
+      "connection_lane": true
+    },
+    {
+      "target": "C060",
+      "variance": 0.669813228174774,
+      "mean": 5.894652997632613,
+      "n_runs": 509,
+      "stdev": 0.8184211801846125,
+      "max_n_obstacles": 0,
+      "name": "C060_to_LC-031",
+      "source": "LC-031"
+    },
+    {
+      "target": "C063-2",
+      "source": "LC-031",
+      "connection_lane": true
+    },
+    {
+      "target": "C062",
+      "variance": 0.1446818324778672,
+      "mean": 2.8863868316549706,
+      "n_runs": 513,
+      "stdev": 0.38037065144128457,
+      "max_n_obstacles": 0,
+      "name": "LC-031_to_C062",
+      "source": "LC-031"
+    },
+    {
+      "target": "C066",
+      "variance": 0.42137516783583634,
+      "mean": 7.2932007925999995,
+      "n_runs": 5,
+      "stdev": 0.6491341678234449,
+      "max_n_obstacles": 0,
+      "name": "INT-C004_to_C066",
+      "source": "INT-C004"
+    },
+    {
+      "target": "LC-035",
+      "variance": 0.02757420337518592,
+      "mean": 2.0442484821801243,
+      "n_runs": 322,
+      "stdev": 0.16605482039129704,
+      "max_n_obstacles": 0,
+      "name": "LC-035_to_INT-C004",
+      "source": "INT-C004"
+    },
+    {
+      "target": "LC-034",
+      "variance": 0.011483512951132799,
+      "mean": 2.0710113198629285,
+      "n_runs": 321,
+      "stdev": 0.10716115411441218,
+      "max_n_obstacles": 0,
+      "name": "LC-034_to_INT-C004",
+      "source": "INT-C004"
+    },
+    {
+      "target": "LC-046",
+      "variance": 10.636736857746047,
+      "mean": 2.757357162678161,
+      "n_runs": 87,
+      "stdev": 3.2614010574822054,
+      "max_n_obstacles": 0,
+      "name": "INT-C004_to_LC-046",
+      "source": "INT-C004"
+    },
+    {
+      "target": "B050-2",
+      "source": "B053",
+      "connection_lane": true
+    },
+    {
+      "target": "B051",
+      "variance": 0.019266843176994175,
+      "mean": 4.134303133021053,
+      "n_runs": 95,
+      "stdev": 0.1388050545801347,
+      "max_n_obstacles": 0,
+      "name": "B051_to_B053<->B053_to_B051",
+      "source": "B053"
+    },
+    {
+      "target": "B055",
+      "variance": 0.06326366739505156,
+      "mean": 4.8509142644826255,
+      "n_runs": 259,
+      "stdev": 0.25152269757429757,
+      "max_n_obstacles": 0,
+      "name": "B053_to_B055<->B055_to_B053",
+      "source": "B053"
+    },
+    {
       "target": "mensa-entrance",
-      "mean": 5.291156832461538,
-      "variance": 6.782380325151404,
-      "max_n_obstacles": 0
-    },
-    {
-      "connection_lane": true,
-      "source": "LC-008",
-      "target": "C062"
-    },
-    {
-      "n_runs": 131,
-      "stdev": 0.5280974662919529,
-      "source": "LA-007",
+      "variance": 0.15463459904168683,
+      "mean": 4.535987581487309,
+      "n_runs": 394,
+      "stdev": 0.3932360602000875,
+      "max_n_obstacles": 0,
       "name": "mensa-entrance_to_LA-007<->LA-007_to_mensa-entrance",
-      "target": "mensa-entrance",
-      "mean": 5.0790160531755735,
-      "variance": 0.2788869339039803,
-      "max_n_obstacles": 0
+      "source": "LA-007"
+    },
+    {
+      "target": "LA-008",
+      "variance": 0.07576821275009146,
+      "mean": 6.1263154767165355,
+      "n_runs": 254,
+      "stdev": 0.2752602636598524,
+      "max_n_obstacles": 0,
+      "name": "LA-007_to_LA-008<->LA-008_to_LA-007",
+      "source": "LA-007"
+    },
+    {
+      "target": "B007-1",
+      "variance": 0.05719171300545821,
+      "mean": 2.304166015909968,
+      "n_runs": 311,
+      "stdev": 0.23914788940205642,
+      "max_n_obstacles": 0,
+      "name": "B005_to_B007-1<->B007-1_to_B005",
+      "source": "B005"
+    },
+    {
+      "target": "B003",
+      "variance": 0.09845703755578912,
+      "mean": 4.092800919764151,
+      "n_runs": 212,
+      "stdev": 0.3137786441996796,
+      "max_n_obstacles": 0,
+      "name": "B003_to_B005<->B005_to_B003",
+      "source": "B005"
+    },
+    {
+      "target": "B008-2",
+      "source": "B005",
+      "connection_lane": true
+    },
+    {
+      "target": "LC-001",
+      "variance": 3.992254696230679,
+      "mean": 2.1140190428687022,
+      "n_runs": 655,
+      "stdev": 1.9980627358095338,
+      "max_n_obstacles": 0,
+      "name": "C020_to_LC-001<->LC-001_to_C020",
+      "source": "C020"
+    },
+    {
+      "target": "LC-002",
+      "variance": 1.8493954167806246,
+      "mean": 2.3041268008244273,
+      "n_runs": 1048,
+      "stdev": 1.3599247835011408,
+      "max_n_obstacles": 0,
+      "name": "C020_to_LC-002<->LC-002_to_C020",
+      "source": "C020"
+    },
+    {
+      "target": "LB-002",
+      "variance": 0.07270252952158815,
+      "mean": 1.6392333966842105,
+      "n_runs": 19,
+      "stdev": 0.2696340659515933,
+      "max_n_obstacles": 0,
+      "name": "LA-020_to_LB-002",
+      "source": "LA-020"
+    },
+    {
+      "target": "street-end",
+      "variance": 0.0633010123706779,
+      "mean": 1.6965350262833334,
+      "n_runs": 180,
+      "stdev": 0.2515969244062373,
+      "max_n_obstacles": 0,
+      "name": "street-end_to_LA-020<->LA-020_to_street-end",
+      "source": "LA-020"
+    },
+    {
+      "target": "LC-034",
+      "variance": 0.10370947566152237,
+      "mean": 2.7847727095555554,
+      "n_runs": 441,
+      "stdev": 0.32203955605099566,
+      "max_n_obstacles": 0,
+      "name": "C064_to_LC-034",
+      "source": "C064"
+    },
+    {
+      "target": "LC-009",
+      "variance": 0.4725521856363374,
+      "mean": 4.881887899123456,
+      "n_runs": 486,
+      "stdev": 0.687424312660192,
+      "max_n_obstacles": 0,
+      "name": "LC-009_to_C064",
+      "source": "C064"
+    },
+    {
+      "target": "C065",
+      "source": "C064",
+      "connection_lane": true
+    },
+    {
+      "target": "B006",
+      "source": "B001",
+      "connection_lane": true
+    },
+    {
+      "target": "B003",
+      "variance": 0.11337665308735402,
+      "mean": 5.224164831651583,
+      "n_runs": 221,
+      "stdev": 0.33671449788708835,
+      "max_n_obstacles": 0,
+      "name": "B001_to_B003<->B003_to_B001",
+      "source": "B001"
+    },
+    {
+      "target": "C062",
+      "source": "LC-008",
+      "connection_lane": true
+    },
+    {
+      "target": "C063-1",
+      "variance": 0.05847004655921923,
+      "mean": 1.8958682837011718,
+      "n_runs": 512,
+      "stdev": 0.24180580340268765,
+      "max_n_obstacles": 0,
+      "name": "LC-008_to_C063-1",
+      "source": "LC-008"
+    },
+    {
+      "target": "C063-2",
+      "variance": 0.1689699923267998,
+      "mean": 2.878671094040856,
+      "n_runs": 514,
+      "stdev": 0.41105959704986794,
+      "max_n_obstacles": 0,
+      "name": "C063-2_to_LC-008",
+      "source": "LC-008"
+    },
+    {
+      "target": "B007-2",
+      "source": "B014-1",
+      "connection_lane": true
+    },
+    {
+      "target": "B009",
+      "source": "B014-1",
+      "connection_lane": true
+    },
+    {
+      "target": "B010",
+      "variance": 0.03650624914919947,
+      "mean": 2.9474797684375,
+      "n_runs": 64,
+      "stdev": 0.1910660858163988,
+      "max_n_obstacles": 0,
+      "name": "B010_to_B014-1",
+      "source": "B014-1"
+    },
+    {
+      "target": "LB-040",
+      "variance": 0.02508536995331219,
+      "mean": 2.6555480013513515,
+      "n_runs": 185,
+      "stdev": 0.15838361642957957,
+      "max_n_obstacles": 0,
+      "name": "B038-2_to_LB-040",
+      "source": "B038-2"
+    },
+    {
+      "target": "B041",
+      "source": "B038-2",
+      "connection_lane": true
+    },
+    {
+      "target": "C012",
+      "variance": 4.466091951154768,
+      "mean": 5.356015982803347,
+      "n_runs": 239,
+      "stdev": 2.113313027252415,
+      "max_n_obstacles": 0,
+      "name": "C012_to_INT-C002<->INT-C002_to_C012",
+      "source": "INT-C002"
+    },
+    {
+      "target": "LC-016",
+      "variance": 0.1343659566785542,
+      "mean": 9.345304847893333,
+      "n_runs": 75,
+      "stdev": 0.3665596222697669,
+      "max_n_obstacles": 0,
+      "name": "INT-C002_to_LC-016",
+      "source": "INT-C002"
+    },
+    {
+      "target": "INT-C007",
+      "variance": 5.7010043643212205,
+      "mean": 12.018981951793478,
+      "n_runs": 92,
+      "stdev": 2.387677608958383,
+      "max_n_obstacles": 0,
+      "name": "INT-C002_to_INT-C007<->INT-C007_to_INT-C002",
+      "source": "INT-C002"
+    },
+    {
+      "target": "LC-015",
+      "variance": 5.449795554310716,
+      "mean": 5.457633633854272,
+      "n_runs": 199,
+      "stdev": 2.334479718119375,
+      "max_n_obstacles": 0,
+      "name": "LC-015_to_INT-C002<->INT-C002_to_LC-015",
+      "source": "INT-C002"
+    },
+    {
+      "target": "C002",
+      "variance": 0.04119383853948281,
+      "mean": 10.1839900415,
+      "n_runs": 6,
+      "stdev": 0.20296265306573721,
+      "max_n_obstacles": 0,
+      "name": "INT-C002_to_C002",
+      "source": "INT-C002"
+    },
+    {
+      "target": "B034",
+      "variance": 0.08097725906332465,
+      "mean": 4.9999148508351645,
+      "n_runs": 182,
+      "stdev": 0.2845650348572794,
+      "max_n_obstacles": 0,
+      "name": "B032_to_B034",
+      "source": "B032"
+    },
+    {
+      "target": "LB-031",
+      "variance": 0.0275044111997798,
+      "mean": 2.9557135263670884,
+      "n_runs": 158,
+      "stdev": 0.16584453925221596,
+      "max_n_obstacles": 0,
+      "name": "LB-031_to_B032",
+      "source": "B032"
+    },
+    {
+      "target": "C061-1",
+      "source": "C060",
+      "connection_lane": true
+    },
+    {
+      "target": "C058",
+      "variance": 0.4310439562541011,
+      "mean": 4.96805916548218,
+      "n_runs": 477,
+      "stdev": 0.6565393790581804,
+      "max_n_obstacles": 0,
+      "name": "C058_to_C060",
+      "source": "C060"
+    },
+    {
+      "target": "INT-B005",
+      "variance": 14.65711214346118,
+      "mean": 7.2899868678096675,
+      "n_runs": 331,
+      "stdev": 3.8284608060500216,
+      "max_n_obstacles": 0,
+      "name": "B064_to_INT-B005<->INT-B005_to_B064",
+      "source": "B064"
+    },
+    {
+      "target": "B062",
+      "variance": 0.17034690830536267,
+      "mean": 8.137638954654708,
+      "n_runs": 223,
+      "stdev": 0.4127310362758811,
+      "max_n_obstacles": 0,
+      "name": "B062_to_B064<->B064_to_B062",
+      "source": "B064"
+    },
+    {
+      "target": "B067",
+      "source": "B064",
+      "connection_lane": true
+    },
+    {
+      "target": "C016-1",
+      "variance": 0.17646784156406553,
+      "mean": 3.518832400605008,
+      "n_runs": 1238,
+      "stdev": 0.4200807560030161,
+      "max_n_obstacles": 0,
+      "name": "C016-1_to_LC-003<->LC-003_to_C016-1",
+      "source": "LC-003"
+    },
+    {
+      "target": "C014-1",
+      "variance": 0.10513676379277552,
+      "mean": 4.460337016391583,
+      "n_runs": 1402,
+      "stdev": 0.32424799736124127,
+      "max_n_obstacles": 0,
+      "name": "C014-1_to_LC-005<->LC-005_to_C014-1",
+      "source": "LC-005"
+    },
+    {
+      "target": "C014-2",
+      "variance": 0.04841486185198029,
+      "mean": 1.8605377776224359,
+      "n_runs": 1560,
+      "stdev": 0.22003377434380453,
+      "max_n_obstacles": 0,
+      "name": "LC-005_to_C014-2<->C014-2_to_LC-005",
+      "source": "LC-005"
+    },
+    {
+      "target": "C013-2",
+      "source": "LC-005",
+      "connection_lane": true
+    },
+    {
+      "target": "LC-022",
+      "variance": 0.029280325734504044,
+      "mean": 3.5857486521627906,
+      "n_runs": 43,
+      "stdev": 0.17111494889256182,
+      "max_n_obstacles": 0,
+      "name": "LC-022_to_INT-C003",
+      "source": "INT-C003"
+    },
+    {
+      "target": "LC-023",
+      "variance": 0.02805809501803546,
+      "mean": 3.13400460252,
+      "n_runs": 25,
+      "stdev": 0.16750550742598125,
+      "max_n_obstacles": 0,
+      "name": "LC-023_to_INT-C003",
+      "source": "INT-C003"
+    },
+    {
+      "target": "LC-026",
+      "variance": 0.07039399123933379,
+      "mean": 9.67025676225,
+      "n_runs": 12,
+      "stdev": 0.26531865980238517,
+      "max_n_obstacles": 0,
+      "name": "INT-C003_to_LC-026",
+      "source": "INT-C003"
+    },
+    {
+      "target": "C059",
+      "variance": 0.10880195092648269,
+      "mean": 8.923795824,
+      "n_runs": 155,
+      "stdev": 0.3298514073434926,
+      "max_n_obstacles": 0,
+      "name": "INT-C003_to_C059",
+      "source": "INT-C003"
+    },
+    {
+      "target": "B016-1",
+      "source": "B017",
+      "connection_lane": true
+    },
+    {
+      "target": "B015",
+      "variance": 0.013240328542327167,
+      "mean": 1.5925783317412396,
+      "n_runs": 371,
+      "stdev": 0.11506662653579085,
+      "max_n_obstacles": 0,
+      "name": "B015_to_B017<->B017_to_B015",
+      "source": "B017"
+    },
+    {
+      "target": "B012",
+      "variance": 0.029519622787602635,
+      "mean": 2.1653977970666665,
+      "n_runs": 105,
+      "stdev": 0.1718127550201167,
+      "max_n_obstacles": 0,
+      "name": "B008-2_to_B012<->B012_to_B008-2",
+      "source": "B008-2"
+    },
+    {
+      "target": "B008-1",
+      "variance": 0.07724950751203484,
+      "mean": 4.115949321421875,
+      "n_runs": 192,
+      "stdev": 0.2779379562277071,
+      "max_n_obstacles": 0,
+      "name": "B008-1_to_B008-2<->B008-2_to_B008-1",
+      "source": "B008-2"
+    },
+    {
+      "target": "B037",
+      "variance": 0.06648826418100783,
+      "mean": 3.4194260488973214,
+      "n_runs": 224,
+      "stdev": 0.2578531833835057,
+      "max_n_obstacles": 0,
+      "name": "B037_to_B039<->B039_to_B037",
+      "source": "B039"
+    },
+    {
+      "target": "B041",
+      "variance": 0.13301890836484914,
+      "mean": 6.056591874747748,
+      "n_runs": 222,
+      "stdev": 0.3647175734247654,
+      "max_n_obstacles": 0,
+      "name": "B039_to_B041<->B041_to_B039",
+      "source": "B039"
+    },
+    {
+      "target": "A-stairs-main",
+      "variance": 0.05393361229562853,
+      "mean": 5.334090200342105,
+      "n_runs": 38,
+      "stdev": 0.23223611324604218,
+      "max_n_obstacles": 0,
+      "name": "A-stairs-main_to_A-main-entrance",
+      "source": "A-main-entrance"
+    },
+    {
+      "target": "LA-001",
+      "variance": 0.2257008643616532,
+      "mean": 7.127750530136843,
+      "n_runs": 95,
+      "stdev": 0.4750798505111043,
+      "max_n_obstacles": 0,
+      "name": "LA-001_to_A-main-entrance<->A-main-entrance_to_LA-001",
+      "source": "A-main-entrance"
+    },
+    {
+      "target": "LA-004",
+      "variance": 0.0828804962663535,
+      "mean": 3.438305566994135,
+      "n_runs": 341,
+      "stdev": 0.28788972935197515,
+      "max_n_obstacles": 0,
+      "name": "A-main-entrance_to_LA-004<->LA-004_to_A-main-entrance",
+      "source": "A-main-entrance"
+    },
+    {
+      "target": "B007-2",
+      "variance": 0.028050428943524795,
+      "mean": 2.0873753286681223,
+      "n_runs": 229,
+      "stdev": 0.16748262281062115,
+      "max_n_obstacles": 0,
+      "name": "B007-2_to_B009<->B009_to_B007-2",
+      "source": "B009"
+    },
+    {
+      "target": "B011",
+      "variance": 0.049176096518649355,
+      "mean": 4.064059581904025,
+      "n_runs": 323,
+      "stdev": 0.22175684097373266,
+      "max_n_obstacles": 0,
+      "name": "B009_to_B011<->B011_to_B009",
+      "source": "B009"
+    },
+    {
+      "target": "LC-034",
+      "source": "LC-035",
+      "connection_lane": true
+    },
+    {
+      "target": "C065",
+      "variance": 0.13761515267599145,
+      "mean": 2.7310369198276643,
+      "n_runs": 441,
+      "stdev": 0.37096516369598836,
+      "max_n_obstacles": 0,
+      "name": "C065_to_LC-035",
+      "source": "LC-035"
+    },
+    {
+      "target": "C017",
+      "variance": 0.05763710001330139,
+      "mean": 4.437447210869272,
+      "n_runs": 742,
+      "stdev": 0.24007727925253858,
+      "max_n_obstacles": 0,
+      "name": "C019_to_C017",
+      "source": "C019"
+    },
+    {
+      "target": "C018-2",
+      "source": "C019",
+      "connection_lane": true
+    },
+    {
+      "target": "A049",
+      "variance": 0.09449033633670074,
+      "mean": 6.070695495031007,
+      "n_runs": 129,
+      "stdev": 0.307392804627403,
+      "max_n_obstacles": 0,
+      "name": "LA-022_to_A049<->A049_to_LA-022",
+      "source": "LA-022"
+    },
+    {
+      "target": "LB-031",
+      "variance": 0.03514703508903392,
+      "mean": 2.6345275026984125,
+      "n_runs": 189,
+      "stdev": 0.18747542529364727,
+      "max_n_obstacles": 0,
+      "name": "INT-B002_to_LB-031<->LB-031_to_INT-B002",
+      "source": "INT-B002"
+    },
+    {
+      "target": "B027",
+      "variance": 0.007466865030873519,
+      "mean": 3.5754284244324324,
+      "n_runs": 37,
+      "stdev": 0.08641102378095933,
+      "max_n_obstacles": 0,
+      "name": "B027_to_INT-B002<->INT-B002_to_B027",
+      "source": "INT-B002"
+    },
+    {
+      "target": "B024",
+      "variance": 0.06776536742260747,
+      "mean": 3.7495888083023257,
+      "n_runs": 43,
+      "stdev": 0.26031782002507525,
+      "max_n_obstacles": 0,
+      "name": "B024_to_INT-B002<->INT-B002_to_B024",
+      "source": "INT-B002"
+    },
+    {
+      "target": "B029",
+      "variance": 0.012688648626031146,
+      "mean": 2.8311363906861704,
+      "n_runs": 188,
+      "stdev": 0.11264390185904936,
+      "max_n_obstacles": 0,
+      "name": "INT-B002_to_B029<->B029_to_INT-B002",
+      "source": "INT-B002"
+    },
+    {
+      "target": "B049",
+      "variance": 0.029863028264329763,
+      "mean": 3.1017078952173915,
+      "n_runs": 345,
+      "stdev": 0.1728092250556369,
+      "max_n_obstacles": 0,
+      "name": "B049_to_B051<->B051_to_B049",
+      "source": "B051"
+    },
+    {
+      "target": "B002",
+      "variance": 0.06608746769011427,
+      "mean": 4.511136711965687,
+      "n_runs": 204,
+      "stdev": 0.25707482897031025,
+      "max_n_obstacles": 0,
+      "name": "B016-2_to_B002<->B002_to_B016-2",
+      "source": "B016-2"
+    },
+    {
+      "target": "B016-1",
+      "variance": 0.05553260122313116,
+      "mean": 4.2824099551561465,
+      "n_runs": 301,
+      "stdev": 0.23565356187236203,
+      "max_n_obstacles": 0,
+      "name": "B016-1_to_B016-2<->B016-2_to_B016-1",
+      "source": "B016-2"
+    },
+    {
+      "target": "C061-2",
+      "variance": 0.4418403718955872,
+      "mean": 4.981846495814142,
+      "n_runs": 495,
+      "stdev": 0.6647107430270608,
+      "max_n_obstacles": 0,
+      "name": "C061-2_to_C061-1",
+      "source": "C061-1"
+    },
+    {
+      "target": "C063-2",
+      "variance": 0.6094595272649548,
+      "mean": 5.975145950781312,
+      "n_runs": 503,
+      "stdev": 0.7806788887019777,
+      "max_n_obstacles": 0,
+      "name": "C061-1_to_C063-2",
+      "source": "C061-1"
+    },
+    {
+      "target": "INT-C007",
+      "variance": 0.0050576050544908,
+      "mean": 2.3508631666363637,
+      "n_runs": 11,
+      "stdev": 0.07111684086410756,
+      "max_n_obstacles": 0,
+      "name": "C002_to_INT-C007",
+      "source": "C002"
+    },
+    {
+      "target": "LA-001",
+      "variance": 0.06762926972137305,
+      "mean": 1.6077786525655173,
+      "n_runs": 145,
+      "stdev": 0.2600562818340927,
+      "max_n_obstacles": 0,
+      "name": "LA-001_to_A-stairs-main",
+      "source": "A-stairs-main"
+    },
+    {
+      "target": "INT-C001",
+      "variance": 0.0711275990480285,
+      "mean": 2.058913721027512,
+      "n_runs": 836,
+      "stdev": 0.2666975797566009,
+      "max_n_obstacles": 0,
+      "name": "LC-001_to_INT-C001<->INT-C001_to_LC-001",
+      "source": "LC-001"
+    },
+    {
+      "target": "LC-002",
+      "source": "LC-001",
+      "connection_lane": true
+    },
+    {
+      "target": "C017",
+      "variance": 0.17217473665144245,
+      "mean": 4.404504166545755,
+      "n_runs": 907,
+      "stdev": 0.41493943732964506,
+      "max_n_obstacles": 0,
+      "name": "C017_to_LC-010",
+      "source": "LC-010"
+    },
+    {
+      "target": "C016-1",
+      "source": "LC-010",
+      "connection_lane": true
+    },
+    {
+      "target": "INT-C001",
+      "variance": 0.06907177928996001,
+      "mean": 1.7298927388704484,
+      "n_runs": 1428,
+      "stdev": 0.2628151047599053,
+      "max_n_obstacles": 0,
+      "name": "LC-002_to_INT-C001<->INT-C001_to_LC-002",
+      "source": "LC-002"
+    },
+    {
+      "target": "B033",
+      "source": "B034",
+      "connection_lane": true
+    },
+    {
+      "target": "LB-034",
+      "variance": 0.05075909221654477,
+      "mean": 3.214017171645051,
+      "n_runs": 293,
+      "stdev": 0.22529778564500977,
+      "max_n_obstacles": 0,
+      "name": "B034_to_LB-034<->LB-034_to_B034",
+      "source": "B034"
+    },
+    {
+      "target": "LB-050",
+      "variance": 0.31958945983873077,
+      "mean": 0.7657239463152173,
+      "n_runs": 552,
+      "stdev": 0.5653224388247213,
+      "max_n_obstacles": 0,
+      "name": "LB-050_to_B048<->B048_to_LB-050",
+      "source": "B048"
+    },
+    {
+      "target": "B046",
+      "variance": 0.11537157278658386,
+      "mean": 1.0877175386131388,
+      "n_runs": 274,
+      "stdev": 0.3396639115163456,
+      "max_n_obstacles": 0,
+      "name": "B048_to_B046<->B046_to_B048",
+      "source": "B048"
+    },
+    {
+      "target": "B044-1",
+      "variance": 0.046259967233345405,
+      "mean": 4.250885852669724,
+      "n_runs": 109,
+      "stdev": 0.21508130377451548,
+      "max_n_obstacles": 0,
+      "name": "B044-1_to_B044-2",
+      "source": "B044-2"
+    },
+    {
+      "target": "LB-050",
+      "variance": 0.023384061738768353,
+      "mean": 3.036291629978261,
+      "n_runs": 138,
+      "stdev": 0.15291848069729294,
+      "max_n_obstacles": 0,
+      "name": "B044-2_to_LB-050",
+      "source": "B044-2"
+    },
+    {
+      "target": "B047",
+      "source": "B044-2",
+      "connection_lane": true
+    },
+    {
+      "target": "INT-B001",
+      "variance": 0.03681233325227961,
+      "mean": 3.0772942924719104,
+      "n_runs": 178,
+      "stdev": 0.1918654040005118,
+      "max_n_obstacles": 0,
+      "name": "INT-B001_to_B015<->B015_to_INT-B001",
+      "source": "B015"
+    },
+    {
+      "target": "LB-019",
+      "source": "B015",
+      "connection_lane": true
+    },
+    {
+      "target": "B065",
+      "variance": 0.13480432724878044,
+      "mean": 7.9571403515327095,
+      "n_runs": 214,
+      "stdev": 0.3671570879729553,
+      "max_n_obstacles": 0,
+      "name": "B065_to_B067<->B067_to_B065",
+      "source": "B067"
+    },
+    {
+      "target": "INT-B005",
+      "variance": 14.518374680153533,
+      "mean": 7.150532108723343,
+      "n_runs": 347,
+      "stdev": 3.810298502762419,
+      "max_n_obstacles": 0,
+      "name": "B067_to_INT-B005<->INT-B005_to_B067",
+      "source": "B067"
+    },
+    {
+      "target": "B025",
+      "variance": 0.06163939466876485,
+      "mean": 5.29237006645122,
+      "n_runs": 246,
+      "stdev": 0.24827282305714585,
+      "max_n_obstacles": 0,
+      "name": "B021_to_B025<->B025_to_B021",
+      "source": "B021"
+    },
+    {
+      "target": "B018",
+      "source": "B021",
+      "connection_lane": true
+    },
+    {
+      "target": "B027",
+      "source": "B024",
+      "connection_lane": true
+    },
+    {
+      "target": "B022",
+      "variance": 0.023826986962067122,
+      "mean": 2.4328142343074792,
+      "n_runs": 361,
+      "stdev": 0.15435992667161746,
+      "max_n_obstacles": 0,
+      "name": "B022_to_B024<->B024_to_B022",
+      "source": "B024"
+    },
+    {
+      "target": "C-stairs-1",
+      "variance": 0.17031992514184816,
+      "mean": 3.9531633146753244,
+      "n_runs": 77,
+      "stdev": 0.41269834642490166,
+      "max_n_obstacles": 0,
+      "name": "LC-016_to_C-stairs-1",
+      "source": "LC-016"
+    },
+    {
+      "target": "C013-1",
+      "variance": 0.10151463452647488,
+      "mean": 4.527739638554555,
+      "n_runs": 889,
+      "stdev": 0.3186136132158745,
+      "max_n_obstacles": 0,
+      "name": "C013-1_to_C013-2",
+      "source": "C013-2"
+    },
+    {
+      "target": "B057",
+      "source": "LB-057",
+      "connection_lane": true
+    },
+    {
+      "target": "B055",
+      "source": "LB-057",
+      "connection_lane": true
+    },
+    {
+      "target": "LB-059",
+      "variance": 0.03480490074548927,
+      "mean": 3.491346661716292,
+      "n_runs": 356,
+      "stdev": 0.18656071597603088,
+      "max_n_obstacles": 0,
+      "name": "LB-057_to_LB-059<->LB-059_to_LB-057",
+      "source": "LB-057"
+    },
+    {
+      "target": "B050-2",
+      "variance": 0.03571920248045591,
+      "mean": 4.1169447267826085,
+      "n_runs": 253,
+      "stdev": 0.18899524459746575,
+      "max_n_obstacles": 0,
+      "name": "B050-2_to_LB-057<->LB-057_to_B050-2",
+      "source": "LB-057"
+    },
+    {
+      "target": "C012",
+      "source": "LC-015",
+      "connection_lane": true
+    },
+    {
+      "target": "LB-025",
+      "source": "B025",
+      "connection_lane": true
+    },
+    {
+      "target": "LB-026",
+      "variance": 0.02366415230476023,
+      "mean": 2.666909189078717,
+      "n_runs": 343,
+      "stdev": 0.1538315712224257,
+      "max_n_obstacles": 0,
+      "name": "B025_to_LB-026<->LB-026_to_B025",
+      "source": "B025"
+    },
+    {
+      "target": "LB-019",
+      "variance": 0.03809085879305655,
+      "mean": 2.9327275120111107,
+      "n_runs": 180,
+      "stdev": 0.1951687956438133,
+      "max_n_obstacles": 0,
+      "name": "INT-B001_to_LB-019<->LB-019_to_INT-B001",
+      "source": "INT-B001"
+    },
+    {
+      "target": "B011",
+      "variance": 0.031803835434490876,
+      "mean": 3.7273992741463413,
+      "n_runs": 41,
+      "stdev": 0.17833629870133247,
+      "max_n_obstacles": 0,
+      "name": "B011_to_INT-B001<->INT-B001_to_B011",
+      "source": "INT-B001"
+    },
+    {
+      "target": "C012",
+      "variance": 0.061821777533701425,
+      "mean": 3.236905557269595,
+      "n_runs": 1161,
+      "stdev": 0.24863985507899056,
+      "max_n_obstacles": 0,
+      "name": "C014-2_to_C012<->C012_to_C014-2",
+      "source": "C014-2"
+    },
+    {
+      "target": "B006",
+      "variance": 0.024805887134535312,
+      "mean": 2.81644248966,
+      "n_runs": 100,
+      "stdev": 0.15749884804193112,
+      "max_n_obstacles": 0,
+      "name": "LB-002_to_B006",
+      "source": "LB-002"
+    },
+    {
+      "target": "LA-015",
+      "variance": 0.10919584287717306,
+      "mean": 3.0889340570081836,
+      "n_runs": 611,
+      "stdev": 0.33044794276432266,
+      "max_n_obstacles": 0,
+      "name": "INT-A001_to_LA-015<->LA-015_to_INT-A001",
+      "source": "INT-A001"
+    },
+    {
+      "target": "A054",
+      "variance": 0.2676214692599123,
+      "mean": 6.057543543186441,
+      "n_runs": 295,
+      "stdev": 0.5173214370774831,
+      "max_n_obstacles": 0,
+      "name": "A054_to_INT-A001<->INT-A001_to_A054",
+      "source": "INT-A001"
+    },
+    {
+      "target": "B008-1",
+      "variance": 0.051943666231412465,
+      "mean": 4.29653109995082,
+      "n_runs": 122,
+      "stdev": 0.22791153158937014,
+      "max_n_obstacles": 0,
+      "name": "B006_to_B008-1",
+      "source": "B006"
+    },
+    {
+      "target": "LB-034",
+      "source": "B035",
+      "connection_lane": true
+    },
+    {
+      "target": "B037",
+      "variance": 0.028871456615426925,
+      "mean": 2.793006328403846,
+      "n_runs": 208,
+      "stdev": 0.16991602812985868,
+      "max_n_obstacles": 0,
+      "name": "B035_to_B037<->B037_to_B035",
+      "source": "B035"
+    },
+    {
+      "target": "B033",
+      "variance": 0.06035919206797753,
+      "mean": 4.172819764085245,
+      "n_runs": 305,
+      "stdev": 0.24568107796079358,
+      "max_n_obstacles": 0,
+      "name": "B033_to_B035<->B035_to_B033",
+      "source": "B035"
+    },
+    {
+      "target": "INT-B004",
+      "variance": 0.032617009116419536,
+      "mean": 2.283796523225664,
+      "n_runs": 226,
+      "stdev": 0.1806017971018548,
+      "max_n_obstacles": 0,
+      "name": "LB-059_to_INT-B004<->INT-B004_to_LB-059",
+      "source": "LB-059"
+    },
+    {
+      "target": "LB-060",
+      "source": "LB-059",
+      "connection_lane": true
+    },
+    {
+      "target": "B012",
+      "variance": 0.2727892599298793,
+      "mean": 0.6604852826068112,
+      "n_runs": 323,
+      "stdev": 0.5222923127233248,
+      "max_n_obstacles": 0,
+      "name": "B012_to_B010",
+      "source": "B010"
+    },
+    {
+      "target": "B007-1",
+      "source": "B010",
+      "connection_lane": true
+    },
+    {
+      "target": "LC-047",
+      "variance": 0.23273214426557975,
+      "mean": 2.189481491,
+      "n_runs": 8,
+      "stdev": 0.48242320038072356,
+      "max_n_obstacles": 0,
+      "name": "LC-047_to_INT-C005",
+      "source": "INT-C005"
+    },
+    {
+      "target": "LC-048",
+      "variance": 0.07577285724835432,
+      "mean": 2.288465143530864,
+      "n_runs": 81,
+      "stdev": 0.2752687000883942,
+      "max_n_obstacles": 0,
+      "name": "LC-048_to_INT-C005",
+      "source": "INT-C005"
+    },
+    {
+      "target": "INT-C009",
+      "variance": 1.5352108117446956,
+      "mean": 17.3137915205,
+      "n_runs": 26,
+      "stdev": 1.2390362431118371,
+      "max_n_obstacles": 0,
+      "name": "INT-C005_to_INT-C009",
+      "source": "INT-C005"
+    },
+    {
+      "target": "C061-2",
+      "variance": 0.11095454796452556,
+      "mean": 4.634930115783333,
+      "n_runs": 120,
+      "stdev": 0.3330984058270552,
+      "max_n_obstacles": 0,
+      "name": "C059_to_C061-2",
+      "source": "C059"
+    },
+    {
+      "target": "LC-026",
+      "source": "C059",
+      "connection_lane": true
+    },
+    {
+      "target": "B018",
+      "variance": 0.11401867772531335,
+      "mean": 5.840380073641025,
+      "n_runs": 117,
+      "stdev": 0.33766651851392276,
+      "max_n_obstacles": 0,
+      "name": "B018_to_LB-025<->LB-025_to_B018",
+      "source": "LB-025"
+    },
+    {
+      "target": "B022",
+      "variance": 0.03416234877296877,
+      "mean": 2.7621532090746754,
+      "n_runs": 308,
+      "stdev": 0.18483059479688088,
+      "max_n_obstacles": 0,
+      "name": "LB-025_to_B022<->B022_to_LB-025",
+      "source": "LB-025"
+    },
+    {
+      "target": "LB-050",
+      "source": "B049",
+      "connection_lane": true
+    },
+    {
+      "target": "B047",
+      "variance": 0.037887710323595225,
+      "mean": 2.9397045939999997,
+      "n_runs": 194,
+      "stdev": 0.19464765686643964,
+      "max_n_obstacles": 0,
+      "name": "B047_to_B049<->B049_to_B047",
+      "source": "B049"
+    },
+    {
+      "target": "LC-047",
+      "source": "LC-048",
+      "connection_lane": true
+    },
+    {
+      "target": "LC-046",
+      "variance": 0.17847005022729054,
+      "mean": 2.8986288019,
+      "n_runs": 110,
+      "stdev": 0.4224571578601676,
+      "max_n_obstacles": 0,
+      "name": "LC-046_to_LC-048",
+      "source": "LC-048"
+    },
+    {
+      "target": "B057",
+      "variance": 0.010116978255981882,
+      "mean": 1.5446222207635325,
+      "n_runs": 351,
+      "stdev": 0.10058319072281353,
+      "max_n_obstacles": 0,
+      "name": "B057_to_LB-060<->LB-060_to_B057",
+      "source": "LB-060"
+    },
+    {
+      "target": "INT-B004",
+      "variance": 0.029989207838232092,
+      "mean": 2.182059194268199,
+      "n_runs": 261,
+      "stdev": 0.17317392366702353,
+      "max_n_obstacles": 0,
+      "name": "LB-060_to_INT-B004<->INT-B004_to_LB-060",
+      "source": "LB-060"
+    },
+    {
+      "target": "C063-1",
+      "variance": 0.4580448348779271,
+      "mean": 4.841961422126556,
+      "n_runs": 482,
+      "stdev": 0.6767900966163195,
+      "max_n_obstacles": 0,
+      "name": "C063-1_to_C065",
+      "source": "C065"
+    },
+    {
+      "target": "LC-050",
+      "variance": 0.02433419635909346,
+      "mean": 2.2250454365875,
+      "n_runs": 80,
+      "stdev": 0.15599421899254298,
+      "max_n_obstacles": 0,
+      "name": "LC-050_to_INT-C001",
+      "source": "INT-C001"
+    },
+    {
+      "target": "C013-1",
+      "source": "C014-1",
+      "connection_lane": true
+    },
+    {
+      "target": "B062",
+      "source": "B065",
+      "connection_lane": true
+    },
+    {
+      "target": "B055",
+      "variance": 0.018360576762717143,
+      "mean": 2.141342100602532,
+      "n_runs": 395,
+      "stdev": 0.13550120576111913,
+      "max_n_obstacles": 0,
+      "name": "B055_to_B057<->B057_to_B055",
+      "source": "B057"
+    },
+    {
+      "target": "B007-1",
+      "variance": 0.028547766706438445,
+      "mean": 2.9564653096086957,
+      "n_runs": 345,
+      "stdev": 0.16896084370776102,
+      "max_n_obstacles": 0,
+      "name": "B007-1_to_B007-2<->B007-2_to_B007-1",
+      "source": "B007-2"
+    },
+    {
+      "target": "B012",
+      "source": "B007-1",
+      "connection_lane": true
+    },
+    {
+      "target": "LB-034",
+      "variance": 0.02587030275171115,
+      "mean": 2.9081484235652173,
+      "n_runs": 23,
+      "stdev": 0.16084247807003954,
+      "max_n_obstacles": 0,
+      "name": "LB-034_to_B036",
+      "source": "B036"
+    },
+    {
+      "target": "B037",
+      "source": "B036",
+      "connection_lane": true
+    },
+    {
+      "target": "B061",
+      "variance": 0.04744586323382223,
+      "mean": 3.0213360594628824,
+      "n_runs": 229,
+      "stdev": 0.21782071350957932,
+      "max_n_obstacles": 0,
+      "name": "INT-B004_to_B061<->B061_to_INT-B004",
+      "source": "INT-B004"
+    },
+    {
+      "target": "B060-1",
+      "variance": 0.053852860645310446,
+      "mean": 3.0233297936199093,
+      "n_runs": 221,
+      "stdev": 0.23206219133092415,
+      "max_n_obstacles": 0,
+      "name": "INT-B004_to_B060-1<->B060-1_to_INT-B004",
+      "source": "INT-B004"
+    },
+    {
+      "target": "A045",
+      "variance": 9.033906589083742,
+      "mean": 6.653632679302632,
+      "n_runs": 228,
+      "stdev": 3.0056457856979324,
+      "max_n_obstacles": 0,
+      "name": "A045_to_street-end<->street-end_to_A045",
+      "source": "street-end"
+    },
+    {
+      "target": "LC-009",
+      "source": "C063-1",
+      "connection_lane": true
+    },
+    {
+      "target": "B003",
+      "source": "B008-1",
+      "connection_lane": true
+    },
+    {
+      "target": "C058",
+      "variance": 0.20369546762243085,
+      "mean": 4.0636155740555555,
+      "n_runs": 144,
+      "stdev": 0.4513263427082789,
+      "max_n_obstacles": 0,
+      "name": "LC-026_to_C058",
+      "source": "LC-026"
+    },
+    {
+      "target": "LC-047",
+      "variance": 0.08299718288118249,
+      "mean": 2.3465839964545454,
+      "n_runs": 11,
+      "stdev": 0.2880923165951888,
+      "max_n_obstacles": 0,
+      "name": "C066_to_LC-047",
+      "source": "C066"
+    },
+    {
+      "target": "LC-046",
+      "source": "C066",
+      "connection_lane": true
+    },
+    {
+      "target": "A053",
+      "variance": 0.07712621265939953,
+      "mean": 2.6660251623887916,
+      "n_runs": 571,
+      "stdev": 0.2777160648205277,
+      "max_n_obstacles": 0,
+      "name": "A053_to_A054<->A054_to_A053",
+      "source": "A054"
+    },
+    {
+      "target": "LC-020",
+      "variance": 0.3399902258265014,
+      "mean": 4.763384179248804,
+      "n_runs": 209,
+      "stdev": 0.5830868081396641,
+      "max_n_obstacles": 0,
+      "name": "LC-020_to_C-stairs-2",
+      "source": "C-stairs-2"
+    },
+    {
+      "target": "LC-022",
+      "variance": 0.1388292872306447,
+      "mean": 3.378188548915493,
+      "n_runs": 71,
+      "stdev": 0.37259802365370204,
+      "max_n_obstacles": 0,
+      "name": "C-stairs-2_to_LC-022",
+      "source": "C-stairs-2"
+    },
+    {
+      "target": "LC-023",
+      "variance": 0.021503931517027376,
+      "mean": 3.29675807875,
+      "n_runs": 4,
+      "stdev": 0.1466421887351228,
+      "max_n_obstacles": 0,
+      "name": "C-stairs-2_to_LC-023",
+      "source": "C-stairs-2"
+    },
+    {
+      "target": "B018",
+      "variance": 0.0004466437737656184,
+      "mean": 0.01825581561029412,
+      "n_runs": 1904,
+      "stdev": 0.021133948371414614,
+      "max_n_obstacles": 0,
+      "name": "B002_to_B018<->B018_to_B002",
+      "source": "B002"
+    },
+    {
+      "target": "LC-009",
+      "variance": 0.07748768201728208,
+      "mean": 1.8453435112876448,
+      "n_runs": 518,
+      "stdev": 0.27836609351227043,
+      "max_n_obstacles": 0,
+      "name": "C062_to_LC-009",
+      "source": "C062"
+    },
+    {
+      "target": "LB-026",
+      "source": "B022",
+      "connection_lane": true
+    },
+    {
+      "target": "B045",
+      "variance": 0.05223010816539727,
+      "mean": 4.257879892206643,
+      "n_runs": 271,
+      "stdev": 0.22853907360755024,
+      "max_n_obstacles": 0,
+      "name": "B045_to_B047<->B047_to_B045",
+      "source": "B047"
+    },
+    {
+      "target": "B016-1",
+      "variance": 0.023385647499711306,
+      "mean": 1.6172615343240997,
+      "n_runs": 361,
+      "stdev": 0.15292366559728846,
+      "max_n_obstacles": 0,
+      "name": "LB-019_to_B016-1<->B016-1_to_LB-019",
+      "source": "LB-019"
+    },
+    {
+      "target": "LC-050",
+      "variance": 2.0683777157466565,
+      "mean": 6.352405243903553,
+      "n_runs": 197,
+      "stdev": 1.4381855637387884,
+      "max_n_obstacles": 0,
+      "name": "INT-C009_to_LC-050",
+      "source": "INT-C009"
+    },
+    {
+      "target": "LA-005",
+      "variance": 0.3878481912603406,
+      "mean": 11.295192325059114,
+      "n_runs": 203,
+      "stdev": 0.6227745910522848,
+      "max_n_obstacles": 0,
+      "name": "LA-005_to_mensa-entrance",
+      "source": "mensa-entrance"
+    },
+    {
+      "target": "INT-B003",
+      "variance": 0.019364764420559788,
+      "mean": 2.090607293788321,
+      "n_runs": 137,
+      "stdev": 0.13915733692680307,
+      "max_n_obstacles": 0,
+      "name": "LB-040_to_INT-B003",
+      "source": "LB-040"
+    },
+    {
+      "target": "LA-005",
+      "variance": 3.38310012145143,
+      "mean": 7.065112091334631,
+      "n_runs": 257,
+      "stdev": 1.8393205597316173,
+      "max_n_obstacles": 0,
+      "name": "LA-004_to_LA-005<->LA-005_to_LA-004",
+      "source": "LA-004"
+    },
+    {
+      "target": "B045",
+      "variance": 0.053448412513936304,
+      "mean": 3.662734702328671,
+      "n_runs": 143,
+      "stdev": 0.2311891271533683,
+      "max_n_obstacles": 0,
+      "name": "INT-B003_to_B045<->B045_to_INT-B003",
+      "source": "INT-B003"
+    },
+    {
+      "target": "B044-1",
+      "variance": 0.09372778838877108,
+      "mean": 3.5688185865766426,
+      "n_runs": 137,
+      "stdev": 0.3061499442900016,
+      "max_n_obstacles": 0,
+      "name": "INT-B003_to_B044-1<->B044-1_to_INT-B003",
+      "source": "INT-B003"
+    },
+    {
+      "target": "LB-031",
+      "source": "B029",
+      "connection_lane": true
+    },
+    {
+      "target": "LB-026",
+      "variance": 0.023411252585682375,
+      "mean": 2.5320784428852945,
+      "n_runs": 340,
+      "stdev": 0.15300736121403563,
+      "max_n_obstacles": 0,
+      "name": "LB-026_to_B027<->B027_to_LB-026",
+      "source": "B027"
+    },
+    {
+      "target": "B060-2",
+      "variance": 0.05925230005085015,
+      "mean": 5.210643980444126,
+      "n_runs": 349,
+      "stdev": 0.24341795342753614,
+      "max_n_obstacles": 0,
+      "name": "B060-2_to_B062<->B062_to_B060-2",
+      "source": "B062"
+    },
+    {
+      "target": "A053",
+      "variance": 0.039898969802220276,
+      "mean": 4.079270947742014,
+      "n_runs": 407,
+      "stdev": 0.19974726481786997,
+      "max_n_obstacles": 0,
+      "name": "A049_to_A053<->A053_to_A049",
+      "source": "A049"
+    },
+    {
+      "target": "B045",
+      "source": "B044-1",
+      "connection_lane": true
+    },
+    {
+      "target": "LC-018",
+      "variance": 0.02288289454365384,
+      "mean": 2.950421486669683,
+      "n_runs": 221,
+      "stdev": 0.1512709309274384,
+      "max_n_obstacles": 0,
+      "name": "C-stairs-1_to_LC-018",
+      "source": "C-stairs-1"
+    },
+    {
+      "target": "LC-022",
+      "source": "LC-023",
+      "connection_lane": true
+    },
+    {
+      "target": "B060-1",
+      "source": "B061",
+      "connection_lane": true
+    },
+    {
+      "target": "C013-1",
+      "variance": 0.06744015734475581,
+      "mean": 3.617060323361052,
+      "n_runs": 1407,
+      "stdev": 0.25969242835469003,
+      "max_n_obstacles": 0,
+      "name": "LC-004_to_C013-1<->C013-1_to_LC-004",
+      "source": "LC-004"
+    },
+    {
+      "target": "C058",
+      "source": "C061-2",
+      "connection_lane": true
+    },
+    {
+      "target": "B060-1",
+      "variance": 0.10124301393638338,
+      "mean": 4.510467319012048,
+      "n_runs": 249,
+      "stdev": 0.31818707380467764,
+      "max_n_obstacles": 0,
+      "name": "B060-1_to_B060-2<->B060-2_to_B060-1",
+      "source": "B060-2"
+    },
+    {
+      "target": "LC-054",
+      "variance": 0.0613294857619239,
+      "mean": 3.163620370625,
+      "n_runs": 8,
+      "stdev": 0.2476479068393753,
+      "max_n_obstacles": 0,
+      "name": "INT-C007_to_LC-054",
+      "source": "INT-C007"
+    },
+    {
+      "target": "LA-001",
+      "variance": 0.11879407255481758,
+      "mean": 2.6175693401837123,
+      "n_runs": 528,
+      "stdev": 0.34466516005366366,
+      "max_n_obstacles": 0,
+      "name": "INT-C007_to_LA-001<->LA-001_to_INT-C007",
+      "source": "INT-C007"
+    },
+    {
+      "target": "LC-018",
+      "variance": 0.10992390866005072,
+      "mean": 6.047629030276119,
+      "n_runs": 134,
+      "stdev": 0.3315477471798756,
+      "max_n_obstacles": 0,
+      "name": "LC-018_to_LC-020",
+      "source": "LC-020"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "stairs-mensa",
+      "pose": [
+        -14,
+        -75,
+        0
+      ]
+    },
+    {
+      "id": "LA-017",
+      "pose": [
+        -53.26559,
+        -135.133,
+        0
+      ]
+    },
+    {
+      "id": "B038-1",
+      "pose": [
+        -105.6009,
+        -54.07439,
+        0
+      ]
+    },
+    {
+      "id": "C018-1",
+      "pose": [
+        -4.329483,
+        -8.017118,
+        0
+      ]
+    },
+    {
+      "id": "LC-006",
+      "pose": [
+        -26.4823,
+        -40.71242,
+        0
+      ]
+    },
+    {
+      "id": "C021",
+      "pose": [
+        -5.337179,
+        -7.482509,
+        0
+      ]
+    },
+    {
+      "id": "C015",
+      "pose": [
+        -17.84285,
+        -27.08498,
+        0
+      ]
+    },
+    {
+      "id": "B050-1",
+      "pose": [
+        -96.21963,
+        -23.3045,
+        0
+      ]
+    },
+    {
+      "id": "LA-010",
+      "pose": [
+        -30.19383,
+        -95.44927,
+        0
+      ]
+    },
+    {
+      "id": "B031",
+      "pose": [
+        -107.387,
+        -73.64619,
+        0
+      ]
+    },
+    {
+      "id": "B019",
+      "pose": [
+        -98.58972,
+        -106.7721,
+        0
+      ]
+    },
+    {
+      "id": "LC-007",
+      "pose": [
+        -11.07922,
+        -18.64927,
+        0
+      ]
+    },
+    {
+      "id": "B063",
+      "pose": [
+        -80.88763,
+        1.384652,
+        0
+      ]
+    },
+    {
+      "id": "LB-022",
+      "pose": [
+        -100.6071,
+        -102.1163,
+        0
+      ]
+    },
+    {
+      "id": "LB-041",
+      "pose": [
+        -104.8748,
+        -44.85629,
+        0
+      ]
+    },
+    {
+      "id": "LB-001",
+      "pose": [
+        -67.17828,
+        -143.8882,
+        0
+      ]
+    },
+    {
+      "id": "C016-2",
+      "pose": [
+        -18.27401,
+        -30.02443,
+        0
+      ]
+    },
+    {
+      "id": "B014-2",
+      "pose": [
+        -88.49725,
+        -122.0948,
+        0
+      ]
+    },
+    {
+      "id": "LC-031",
+      "pose": [
+        -46.83686,
+        -9.806322,
+        0
+      ]
+    },
+    {
+      "id": "INT-C004",
+      "pose": [
+        -37.5,
+        5,
+        0
+      ]
+    },
+    {
+      "id": "B053",
+      "pose": [
+        -94.89967,
+        -19.10809,
+        0
+      ]
+    },
+    {
+      "id": "LA-007",
+      "pose": [
+        -20.86694,
+        -80.05825,
+        0
+      ]
+    },
+    {
+      "id": "B005",
+      "pose": [
+        -79.00788,
+        -134.4091,
+        0
+      ]
+    },
+    {
+      "id": "C020",
+      "pose": [
+        -0.71,
+        -2.33,
+        0
+      ]
+    },
+    {
+      "id": "LA-020",
+      "pose": [
+        -65.20562,
+        -144.3996,
+        0
+      ]
+    },
+    {
+      "id": "C064",
+      "pose": [
+        -40.18932,
+        0.2280047,
+        0
+      ]
+    },
+    {
+      "id": "B001",
+      "pose": [
+        -69.11251,
+        -142.6223,
+        0
+      ]
+    },
+    {
+      "id": "LC-008",
+      "pose": [
+        -45.56015,
+        -6.240571,
+        0
+      ]
+    },
+    {
+      "id": "B014-1",
+      "pose": [
+        -83.91296,
+        -127.3866,
+        0
+      ]
+    },
+    {
+      "id": "B038-2",
+      "pose": [
+        -104.7271,
+        -48.48488,
+        0
+      ]
+    },
+    {
+      "id": "INT-C002",
+      "pose": [
+        -31.5,
+        -49,
+        0
+      ]
+    },
+    {
+      "id": "B032",
+      "pose": [
+        -106.1519,
+        -73.74634,
+        0
+      ]
+    },
+    {
+      "id": "C060",
+      "pose": [
+        -50.86114,
+        -16.08586,
+        0
+      ]
+    },
+    {
+      "id": "B064",
+      "pose": [
+        -68.97719,
+        15.14876,
+        0
+      ]
+    },
+    {
+      "id": "LC-003",
+      "pose": [
+        -16.8584,
+        -27.74149,
+        0
+      ]
+    },
+    {
+      "id": "LC-005",
+      "pose": [
+        -24.43369,
+        -39.15257,
+        0
+      ]
+    },
+    {
+      "id": "INT-C003",
+      "pose": [
+        -60,
+        -30,
+        0
+      ]
+    },
+    {
+      "id": "B017",
+      "pose": [
+        -95.50271,
+        -113.0471,
+        0
+      ]
+    },
+    {
+      "id": "B008-2",
+      "pose": [
+        -77.99274,
+        -133.4022,
+        0
+      ]
+    },
+    {
+      "id": "B039",
+      "pose": [
+        -106.7174,
+        -53.92551,
+        0
+      ]
+    },
+    {
+      "id": "A-main-entrance",
+      "pose": [
+        -13.08313,
+        -61.78934,
+        0
+      ]
+    },
+    {
+      "id": "B009",
+      "pose": [
+        -85.74734,
+        -127.0398,
+        0
+      ]
+    },
+    {
+      "id": "LC-035",
+      "pose": [
+        -39.2477,
+        3.602728,
+        0
+      ]
+    },
+    {
+      "id": "C019",
+      "pose": [
+        -8.870706,
+        -12.87811,
+        0
+      ]
+    },
+    {
+      "id": "LA-022",
+      "pose": [
+        -30.15457,
+        -99.67752,
+        0
+      ]
+    },
+    {
+      "id": "INT-B002",
+      "pose": [
+        -105.8748,
+        -81.38637,
+        0
+      ]
+    },
+    {
+      "id": "B051",
+      "pose": [
+        -97.64886,
+        -24.14343,
+        0
+      ]
+    },
+    {
+      "id": "B016-2",
+      "pose": [
+        -97.23789,
+        -107.4094,
+        0
+      ]
+    },
+    {
+      "id": "C061-1",
+      "pose": [
+        -51.5713,
+        -15.65408,
+        0
+      ]
+    },
+    {
+      "id": "C002",
+      "pose": [
+        -27.54516,
+        -53.2444,
+        0
+      ]
+    },
+    {
+      "id": "A-stairs-main",
+      "pose": [
+        -19.53745,
+        -58.10909,
+        0
+      ]
+    },
+    {
+      "id": "LC-001",
+      "pose": [
+        -1.066014,
+        -4.318292,
+        0
+      ]
+    },
+    {
+      "id": "LC-010",
+      "pose": [
+        -15.17257,
+        -23.29826,
+        0
+      ]
+    },
+    {
+      "id": "LC-002",
+      "pose": [
+        -2.246455,
+        -3.683619,
+        0
+      ]
+    },
+    {
+      "id": "B034",
+      "pose": [
+        -106.5911,
+        -66.79164,
+        0
+      ]
+    },
+    {
+      "id": "B048",
+      "pose": [
+        -98.02887,
+        -27.01337,
+        0
+      ]
+    },
+    {
+      "id": "B044-2",
+      "pose": [
+        -100.0279,
+        -32.22308,
+        0
+      ]
+    },
+    {
+      "id": "B015",
+      "pose": [
+        -94.35455,
+        -114.9168,
+        0
+      ]
+    },
+    {
+      "id": "B067",
+      "pose": [
+        -69.78798,
+        15.68671,
+        0
+      ]
+    },
+    {
+      "id": "B021",
+      "pose": [
+        -101.5135,
+        -100.2533,
+        0
+      ]
+    },
+    {
+      "id": "B024",
+      "pose": [
+        -104.4422,
+        -86.30885,
+        0
+      ]
+    },
+    {
+      "id": "LA-008",
+      "pose": [
+        -25.80489,
+        -86.49235,
+        0
+      ]
+    },
+    {
+      "id": "LC-016",
+      "pose": [
+        -35.28431,
+        -46.9525,
+        0
+      ]
+    },
+    {
+      "id": "C013-2",
+      "pose": [
+        -25.35001,
+        -38.55004,
+        0
+      ]
+    },
+    {
+      "id": "LB-057",
+      "pose": [
+        -90.6805,
+        -13.65569,
+        0
+      ]
+    },
+    {
+      "id": "INT-B005",
+      "pose": [
+        -67,
+        18.5,
+        0
+      ]
+    },
+    {
+      "id": "LC-015",
+      "pose": [
+        -28.91752,
+        -44.34554,
+        0
+      ]
+    },
+    {
+      "id": "B025",
+      "pose": [
+        -103.8224,
+        -93.44003,
+        0
+      ]
+    },
+    {
+      "id": "INT-B001",
+      "pose": [
+        -91.78638,
+        -118.0838,
+        0
+      ]
+    },
+    {
+      "id": "C014-2",
+      "pose": [
+        -25.7179,
+        -41.19298,
+        0
+      ]
+    },
+    {
+      "id": "LB-002",
+      "pose": [
+        -66.46356,
+        -142.9112,
+        0
+      ]
+    },
+    {
+      "id": "INT-A001",
+      "pose": [
+        -42.81656,
+        -120.8069,
+        0
+      ]
+    },
+    {
+      "id": "B006",
+      "pose": [
+        -69.43815,
+        -140.8421,
+        0
+      ]
+    },
+    {
+      "id": "B035",
+      "pose": [
+        -107.4231,
+        -62.4112,
+        0
+      ]
+    },
+    {
+      "id": "LB-059",
+      "pose": [
+        -87.8503,
+        -9.872496,
+        0
+      ]
+    },
+    {
+      "id": "B010",
+      "pose": [
+        -81.09502,
+        -130.3494,
+        0
+      ]
+    },
+    {
+      "id": "INT-C005",
+      "pose": [
+        -30.37436,
+        2.789153,
+        0
+      ]
+    },
+    {
+      "id": "C059",
+      "pose": [
+        -58.51849,
+        -25.99691,
+        0
+      ]
+    },
+    {
+      "id": "LB-025",
+      "pose": [
+        -102.7233,
+        -93.10191,
+        0
+      ]
+    },
+    {
+      "id": "B049",
+      "pose": [
+        -99.2571,
+        -28.0722,
+        0
+      ]
+    },
+    {
+      "id": "LC-048",
+      "pose": [
+        -32.70383,
+        4.05767,
+        0
+      ]
+    },
+    {
+      "id": "LB-060",
+      "pose": [
+        -88.54357,
+        -9.308521,
+        0
+      ]
+    },
+    {
+      "id": "C065",
+      "pose": [
+        -41.12271,
+        0.8242311,
+        0
+      ]
+    },
+    {
+      "id": "LB-050",
+      "pose": [
+        -98.44362,
+        -28.47984,
+        0
+      ]
+    },
+    {
+      "id": "INT-C001",
+      "pose": [
+        -3.2034,
+        -5.715645,
+        0
+      ]
+    },
+    {
+      "id": "C014-1",
+      "pose": [
+        -20.99628,
+        -34.11314,
+        0
+      ]
+    },
+    {
+      "id": "B065",
+      "pose": [
+        -76.32381,
+        7.078962,
+        0
+      ]
+    },
+    {
+      "id": "B057",
+      "pose": [
+        -89.65088,
+        -11.05673,
+        0
+      ]
+    },
+    {
+      "id": "B033",
+      "pose": [
+        -107.5476,
+        -68.17053,
+        0
+      ]
+    },
+    {
+      "id": "C018-2",
+      "pose": [
+        -7.707607,
+        -13.61179,
+        0
+      ]
+    },
+    {
+      "id": "C063-2",
+      "pose": [
+        -47.65579,
+        -9.311078,
+        0
+      ]
+    },
+    {
+      "id": "B011",
+      "pose": [
+        -89.26804,
+        -122.7542,
+        0
+      ]
+    },
+    {
+      "id": "B007-2",
+      "pose": [
+        -83.8447,
+        -129.1744,
+        0
+      ]
+    },
+    {
+      "id": "B007-1",
+      "pose": [
+        -80.93893,
+        -131.9215,
+        0
+      ]
+    },
+    {
+      "id": "B036",
+      "pose": [
+        -105.95,
+        -58.76543,
+        0
+      ]
+    },
+    {
+      "id": "INT-B004",
+      "pose": [
+        -86.33067,
+        -7.229747,
+        0
+      ]
+    },
+    {
+      "id": "street-end",
+      "pose": [
+        -63,
+        -145,
+        0
+      ]
+    },
+    {
+      "id": "C063-1",
+      "pose": [
+        -44.44851,
+        -4.276455,
+        0
+      ]
+    },
+    {
+      "id": "B008-1",
+      "pose": [
+        -73.78865,
+        -137.1447,
+        0
+      ]
+    },
+    {
+      "id": "B055",
+      "pose": [
+        -91.39963,
+        -13.37804,
+        0
+      ]
+    },
+    {
+      "id": "C016-1",
+      "pose": [
+        -14.14907,
+        -23.93194,
+        0
+      ]
+    },
+    {
+      "id": "LC-026",
+      "pose": [
+        -57.6,
+        -26.54627,
+        0
+      ]
+    },
+    {
+      "id": "C066",
+      "pose": [
+        -36.03668,
+        3.839637,
+        0
+      ]
+    },
+    {
+      "id": "B012",
+      "pose": [
+        -80.11401,
+        -131.3716,
+        0
+      ]
+    },
+    {
+      "id": "B050-2",
+      "pose": [
+        -93.61603,
+        -18.41065,
+        0
+      ]
+    },
+    {
+      "id": "A054",
+      "pose": [
+        -37.38306,
+        -114.9725,
+        0
+      ]
+    },
+    {
+      "id": "C-stairs-2",
+      "pose": [
+        -53.43081,
+        -34.46329,
+        0
+      ]
+    },
+    {
+      "id": "B002",
+      "pose": [
+        -99.63691,
+        -101.7432,
+        0
+      ]
+    },
+    {
+      "id": "C062",
+      "pose": [
+        -44.85293,
+        -6.737554,
+        0
+      ]
+    },
+    {
+      "id": "B022",
+      "pose": [
+        -103.7355,
+        -89.55469,
+        0
+      ]
+    },
+    {
+      "id": "A045",
+      "pose": [
+        -58.36,
+        -141.96,
+        0
+      ]
+    },
+    {
+      "id": "B047",
+      "pose": [
+        -101.1633,
+        -31.76035,
+        0
+      ]
+    },
+    {
+      "id": "LB-019",
+      "pose": [
+        -93.42631,
+        -114.4891,
+        0
+      ]
+    },
+    {
+      "id": "INT-C009",
+      "pose": [
+        -11.23286,
+        -3.470534,
+        0
+      ]
+    },
+    {
+      "id": "mensa-entrance",
+      "pose": [
+        -16.3927,
+        -76.37867,
+        0
+      ]
+    },
+    {
+      "id": "LB-040",
+      "pose": [
+        -103.9846,
+        -45.00689,
+        0
+      ]
+    },
+    {
+      "id": "LA-004",
+      "pose": [
+        -10.11903,
+        -64.6609,
+        0
+      ]
+    },
+    {
+      "id": "INT-B003",
+      "pose": [
+        -103.8957,
+        -42.10147,
+        0
+      ]
+    },
+    {
+      "id": "B029",
+      "pose": [
+        -107.1189,
+        -77.60102,
+        0
+      ]
+    },
+    {
+      "id": "C017",
+      "pose": [
+        -12.13564,
+        -17.9361,
+        0
+      ]
+    },
+    {
+      "id": "B027",
+      "pose": [
+        -105.3101,
+        -86.41079,
+        0
+      ]
+    },
+    {
+      "id": "B037",
+      "pose": [
+        -107.0321,
+        -58.63913,
+        0
+      ]
+    },
+    {
+      "id": "B062",
+      "pose": [
+        -75.68813,
+        6.417267,
+        0
+      ]
+    },
+    {
+      "id": "A049",
+      "pose": [
+        -33.04047,
+        -107.2446,
+        0
+      ]
+    },
+    {
+      "id": "B041",
+      "pose": [
+        -105.6369,
+        -48.32278,
+        0
+      ]
+    },
+    {
+      "id": "C012",
+      "pose": [
+        -28.08515,
+        -44.90273,
+        0
+      ]
+    },
+    {
+      "id": "B003",
+      "pose": [
+        -74.67226,
+        -138.1191,
+        0
+      ]
+    },
+    {
+      "id": "B044-1",
+      "pose": [
+        -101.9654,
+        -37.66249,
+        0
+      ]
+    },
+    {
+      "id": "LC-050",
+      "pose": [
+        -6.012552,
+        -4.283758,
+        0
+      ]
+    },
+    {
+      "id": "C-stairs-1",
+      "pose": [
+        -38.92048,
+        -43.96327,
+        0
+      ]
+    },
+    {
+      "id": "LC-023",
+      "pose": [
+        -56.23315,
+        -31.42005,
+        0
+      ]
+    },
+    {
+      "id": "B045",
+      "pose": [
+        -102.9772,
+        -37.35704,
+        0
+      ]
+    },
+    {
+      "id": "B046",
+      "pose": [
+        -97.33238,
+        -25.51845,
+        0
+      ]
+    },
+    {
+      "id": "LB-031",
+      "pose": [
+        -105.9963,
+        -77.6199,
+        0
+      ]
+    },
+    {
+      "id": "A053",
+      "pose": [
+        -35.44138,
+        -112.06,
+        0
+      ]
+    },
+    {
+      "id": "B061",
+      "pose": [
+        -84.47298,
+        -3.604766,
+        0
+      ]
+    },
+    {
+      "id": "LC-004",
+      "pose": [
+        -19.17335,
+        -29.46444,
+        0
+      ]
+    },
+    {
+      "id": "LA-015",
+      "pose": [
+        -45.31371,
+        -123.9854,
+        0
+      ]
+    },
+    {
+      "id": "LA-005",
+      "pose": [
+        -13,
+        -70,
+        0
+      ]
+    },
+    {
+      "id": "B016-1",
+      "pose": [
+        -94.45894,
+        -112.4708,
+        0
+      ]
+    },
+    {
+      "id": "LC-046",
+      "pose": [
+        -35.74035,
+        5.100667,
+        0
+      ]
+    },
+    {
+      "id": "C061-2",
+      "pose": [
+        -55.13196,
+        -20.98258,
+        0
+      ]
+    },
+    {
+      "id": "B060-2",
+      "pose": [
+        -80.10402,
+        0.79764,
+        0
+      ]
+    },
+    {
+      "id": "LB-034",
+      "pose": [
+        -106.3076,
+        -62.46473,
+        0
+      ]
+    },
+    {
+      "id": "INT-C007",
+      "pose": [
+        -23.70964,
+        -54.18864,
+        0
+      ]
+    },
+    {
+      "id": "LC-034",
+      "pose": [
+        -38.33049,
+        3.120504,
+        0
+      ]
+    },
+    {
+      "id": "LC-047",
+      "pose": [
+        -33.42667,
+        2.796368,
+        0
+      ]
+    },
+    {
+      "id": "B060-1",
+      "pose": [
+        -83.45932,
+        -4.298347,
+        0
+      ]
+    },
+    {
+      "id": "LC-020",
+      "pose": [
+        -49.64507,
+        -39.13829,
+        0
+      ]
+    },
+    {
+      "id": "LA-001",
+      "pose": [
+        -20.64023,
+        -55.5094,
+        0
+      ]
+    },
+    {
+      "id": "LC-009",
+      "pose": [
+        -43.55342,
+        -4.874435,
+        0
+      ]
+    },
+    {
+      "id": "C058",
+      "pose": [
+        -54.36573,
+        -21.44891,
+        0
+      ]
+    },
+    {
+      "id": "B018",
+      "pose": [
+        -100.0061,
+        -100.7224,
+        0
+      ]
+    },
+    {
+      "id": "LC-022",
+      "pose": [
+        -56.9249,
+        -32.8372,
+        0
+      ]
+    },
+    {
+      "id": "C013-1",
+      "pose": [
+        -21.97387,
+        -33.53688,
+        0
+      ]
+    },
+    {
+      "id": "LC-054",
+      "pose": [
+        -26.11576,
+        -51.21051,
+        0
+      ]
+    },
+    {
+      "id": "LC-018",
+      "pose": [
+        -42.71361,
+        -43.10459,
+        0
+      ]
+    },
+    {
+      "id": "LB-026",
+      "pose": [
+        -104.5734,
+        -89.80496,
+        0
+      ]
     }
   ],
   "multigraph": false,
+  "directed": false,
   "graph": {
     "min_n_runs": 1,
     "goals": {
+      "street": [
+        "A-stairs-main",
+        "A-main-entrance",
+        "mensa-entrance",
+        "A049",
+        "A053",
+        "A054",
+        "A045"
+      ],
       "faraway": [
         "B006",
         "B008-1",
@@ -2223,15 +3348,6 @@
         "B003",
         "B001"
       ],
-      "street": [
-        "A-stairs-main",
-        "A-main-entrance",
-        "mensa-entrance",
-        "A049",
-        "A053",
-        "A054",
-        "A045"
-      ],
       "square": [
         "C020",
         "C021",
@@ -2265,1511 +3381,5 @@
     "obstacle_interval": [
       0
     ]
-  },
-  "nodes": [
-    {
-      "pose": [
-        -7.707607,
-        -13.61179,
-        0
-      ],
-      "id": "C018-2"
-    },
-    {
-      "pose": [
-        -10.11903,
-        -64.6609,
-        0
-      ],
-      "id": "LA-004"
-    },
-    {
-      "pose": [
-        -54.36573,
-        -21.44891,
-        0
-      ],
-      "id": "C058"
-    },
-    {
-      "pose": [
-        -88.54357,
-        -9.308521,
-        0
-      ],
-      "id": "LB-060"
-    },
-    {
-      "pose": [
-        -100.0279,
-        -32.22308,
-        0
-      ],
-      "id": "B044-2"
-    },
-    {
-      "pose": [
-        -1.620838,
-        1.892871,
-        0
-      ],
-      "id": "init_24"
-    },
-    {
-      "pose": [
-        -36.03668,
-        3.839637,
-        0
-      ],
-      "id": "C066"
-    },
-    {
-      "pose": [
-        -76.32381,
-        7.078962,
-        0
-      ],
-      "id": "B065"
-    },
-    {
-      "pose": [
-        -30.19383,
-        -95.44927,
-        0
-      ],
-      "id": "LA-010"
-    },
-    {
-      "pose": [
-        -63,
-        -145,
-        0
-      ],
-      "id": "street-end"
-    },
-    {
-      "pose": [
-        -43.55342,
-        -4.874435,
-        0
-      ],
-      "id": "LC-009"
-    },
-    {
-      "pose": [
-        -44.44851,
-        -4.276455,
-        0
-      ],
-      "id": "C063-1"
-    },
-    {
-      "pose": [
-        3.103928,
-        -0.8828736,
-        0
-      ],
-      "id": "init_3"
-    },
-    {
-      "pose": [
-        3.793087,
-        -1.383833,
-        0
-      ],
-      "id": "init_8"
-    },
-    {
-      "pose": [
-        -58.36,
-        -141.96,
-        0
-      ],
-      "id": "A045"
-    },
-    {
-      "pose": [
-        -101.1633,
-        -31.76035,
-        0
-      ],
-      "id": "B047"
-    },
-    {
-      "pose": [
-        -104.5734,
-        -89.80496,
-        0
-      ],
-      "id": "LB-026"
-    },
-    {
-      "pose": [
-        -49.64507,
-        -39.13829,
-        0
-      ],
-      "id": "LC-020"
-    },
-    {
-      "pose": [
-        -103.8957,
-        -42.10147,
-        0
-      ],
-      "id": "INT-B003"
-    },
-    {
-      "pose": [
-        -105.9963,
-        -77.6199,
-        0
-      ],
-      "id": "LB-031"
-    },
-    {
-      "pose": [
-        -6.012552,
-        -4.283758,
-        0
-      ],
-      "id": "LC-050"
-    },
-    {
-      "pose": [
-        -107.0321,
-        -58.63913,
-        0
-      ],
-      "id": "B037"
-    },
-    {
-      "pose": [
-        -35.28431,
-        -46.9525,
-        0
-      ],
-      "id": "LC-016"
-    },
-    {
-      "pose": [
-        -75.68813,
-        6.417267,
-        0
-      ],
-      "id": "B062"
-    },
-    {
-      "pose": [
-        -105.6369,
-        -48.32278,
-        0
-      ],
-      "id": "B041"
-    },
-    {
-      "pose": [
-        -0.71,
-        -2.33,
-        0
-      ],
-      "id": "C020"
-    },
-    {
-      "pose": [
-        -85.74734,
-        -127.0398,
-        0
-      ],
-      "id": "B009"
-    },
-    {
-      "pose": [
-        -106.1519,
-        -73.74634,
-        0
-      ],
-      "id": "B032"
-    },
-    {
-      "pose": [
-        -98.58972,
-        -106.7721,
-        0
-      ],
-      "id": "B019"
-    },
-    {
-      "pose": [
-        -99.63691,
-        -101.7432,
-        0
-      ],
-      "id": "B002"
-    },
-    {
-      "pose": [
-        -0.2667882,
-        4.015871,
-        0
-      ],
-      "id": "init_21"
-    },
-    {
-      "pose": [
-        -80.88763,
-        1.384652,
-        0
-      ],
-      "id": "B063"
-    },
-    {
-      "pose": [
-        -103.9846,
-        -45.00689,
-        0
-      ],
-      "id": "LB-040"
-    },
-    {
-      "pose": [
-        -2.073176,
-        1.130186,
-        0
-      ],
-      "id": "init_25"
-    },
-    {
-      "pose": [
-        -83.91296,
-        -127.3866,
-        0
-      ],
-      "id": "B014-1"
-    },
-    {
-      "pose": [
-        -19.53745,
-        -58.10909,
-        0
-      ],
-      "id": "A-stairs-main"
-    },
-    {
-      "pose": [
-        3.547726,
-        -0.261464,
-        0
-      ],
-      "id": "init_2"
-    },
-    {
-      "pose": [
-        -28.08515,
-        -44.90273,
-        0
-      ],
-      "id": "C012"
-    },
-    {
-      "pose": [
-        -38.92048,
-        -43.96327,
-        0
-      ],
-      "id": "C-stairs-1"
-    },
-    {
-      "pose": [
-        -67,
-        18.5,
-        0
-      ],
-      "id": "INT-B005"
-    },
-    {
-      "pose": [
-        -80.10402,
-        0.79764,
-        0
-      ],
-      "id": "B060-2"
-    },
-    {
-      "pose": [
-        -20.64023,
-        -55.5094,
-        0
-      ],
-      "id": "LA-001"
-    },
-    {
-      "pose": [
-        -68.97719,
-        15.14876,
-        0
-      ],
-      "id": "B064"
-    },
-    {
-      "pose": [
-        -15.17257,
-        -23.29826,
-        0
-      ],
-      "id": "LC-010"
-    },
-    {
-      "pose": [
-        -101.5135,
-        -100.2533,
-        0
-      ],
-      "id": "B021"
-    },
-    {
-      "pose": [
-        -2.101697,
-        2.02346,
-        0
-      ],
-      "id": "init_29"
-    },
-    {
-      "pose": [
-        -91.39963,
-        -13.37804,
-        0
-      ],
-      "id": "B055"
-    },
-    {
-      "pose": [
-        -13.08313,
-        -61.78934,
-        0
-      ],
-      "id": "A-main-entrance"
-    },
-    {
-      "pose": [
-        -38.33049,
-        3.120504,
-        0
-      ],
-      "id": "LC-034"
-    },
-    {
-      "pose": [
-        -94.45894,
-        -112.4708,
-        0
-      ],
-      "id": "B016-1"
-    },
-    {
-      "pose": [
-        -21.97387,
-        -33.53688,
-        0
-      ],
-      "id": "C013-1"
-    },
-    {
-      "pose": [
-        -91.78638,
-        -118.0838,
-        0
-      ],
-      "id": "INT-B001"
-    },
-    {
-      "pose": [
-        -95.50271,
-        -113.0471,
-        0
-      ],
-      "id": "B017"
-    },
-    {
-      "pose": [
-        -25.80489,
-        -86.49235,
-        0
-      ],
-      "id": "LA-008"
-    },
-    {
-      "pose": [
-        -106.5911,
-        -66.79164,
-        0
-      ],
-      "id": "B034"
-    },
-    {
-      "pose": [
-        -86.33067,
-        -7.229747,
-        0
-      ],
-      "id": "INT-B004"
-    },
-    {
-      "pose": [
-        -2.246455,
-        -3.683619,
-        0
-      ],
-      "id": "LC-002"
-    },
-    {
-      "pose": [
-        -97.33238,
-        -25.51845,
-        0
-      ],
-      "id": "B046"
-    },
-    {
-      "pose": [
-        -87.8503,
-        -9.872496,
-        0
-      ],
-      "id": "LB-059"
-    },
-    {
-      "pose": [
-        -46.83686,
-        -9.806322,
-        0
-      ],
-      "id": "LC-031"
-    },
-    {
-      "pose": [
-        4.318243,
-        -2.264363,
-        0
-      ],
-      "id": "init_14"
-    },
-    {
-      "pose": [
-        -65.20562,
-        -144.3996,
-        0
-      ],
-      "id": "LA-020"
-    },
-    {
-      "pose": [
-        -107.4231,
-        -62.4112,
-        0
-      ],
-      "id": "B035"
-    },
-    {
-      "pose": [
-        -104.7271,
-        -48.48488,
-        0
-      ],
-      "id": "B038-2"
-    },
-    {
-      "pose": [
-        -50.86114,
-        -16.08586,
-        0
-      ],
-      "id": "C060"
-    },
-    {
-      "pose": [
-        -97.64886,
-        -24.14343,
-        0
-      ],
-      "id": "B051"
-    },
-    {
-      "pose": [
-        -13,
-        -70,
-        0
-      ],
-      "id": "LA-005"
-    },
-    {
-      "pose": [
-        -30.37436,
-        2.789153,
-        0
-      ],
-      "id": "INT-C005"
-    },
-    {
-      "pose": [
-        -93.61603,
-        -18.41065,
-        0
-      ],
-      "id": "B050-2"
-    },
-    {
-      "pose": [
-        -1.73334,
-        2.699564,
-        0
-      ],
-      "id": "init_28"
-    },
-    {
-      "pose": [
-        -107.1189,
-        -77.60102,
-        0
-      ],
-      "id": "B029"
-    },
-    {
-      "pose": [
-        -1.066014,
-        -4.318292,
-        0
-      ],
-      "id": "LC-001"
-    },
-    {
-      "pose": [
-        -102.7233,
-        -93.10191,
-        0
-      ],
-      "id": "LB-025"
-    },
-    {
-      "pose": [
-        -39.2477,
-        3.602728,
-        0
-      ],
-      "id": "LC-035"
-    },
-    {
-      "pose": [
-        -93.42631,
-        -114.4891,
-        0
-      ],
-      "id": "LB-019"
-    },
-    {
-      "pose": [
-        -31.5,
-        -49,
-        0
-      ],
-      "id": "INT-C002"
-    },
-    {
-      "pose": [
-        -1.244149,
-        3.450354,
-        0
-      ],
-      "id": "init_27"
-    },
-    {
-      "pose": [
-        -17.84285,
-        -27.08498,
-        0
-      ],
-      "id": "C015"
-    },
-    {
-      "pose": [
-        -66.46356,
-        -142.9112,
-        0
-      ],
-      "id": "LB-002"
-    },
-    {
-      "pose": [
-        -90.6805,
-        -13.65569,
-        0
-      ],
-      "id": "LB-057"
-    },
-    {
-      "pose": [
-        -104.8748,
-        -44.85629,
-        0
-      ],
-      "id": "LB-041"
-    },
-    {
-      "pose": [
-        -53.26559,
-        -135.133,
-        0
-      ],
-      "id": "LA-017"
-    },
-    {
-      "pose": [
-        -41.12271,
-        0.8242311,
-        0
-      ],
-      "id": "C065"
-    },
-    {
-      "pose": [
-        -33.42667,
-        2.796368,
-        0
-      ],
-      "id": "LC-047"
-    },
-    {
-      "pose": [
-        4.246155,
-        -0.7239684,
-        0
-      ],
-      "id": "init_7"
-    },
-    {
-      "pose": [
-        -3.2034,
-        -5.715645,
-        0
-      ],
-      "id": "INT-C001"
-    },
-    {
-      "pose": [
-        -26.4823,
-        -40.71242,
-        0
-      ],
-      "id": "LC-006"
-    },
-    {
-      "pose": [
-        -19.17335,
-        -29.46444,
-        0
-      ],
-      "id": "LC-004"
-    },
-    {
-      "pose": [
-        -32.70383,
-        4.05767,
-        0
-      ],
-      "id": "LC-048"
-    },
-    {
-      "pose": [
-        -80.11401,
-        -131.3716,
-        0
-      ],
-      "id": "B012"
-    },
-    {
-      "pose": [
-        -81.09502,
-        -130.3494,
-        0
-      ],
-      "id": "B010"
-    },
-    {
-      "pose": [
-        -106.3076,
-        -62.46473,
-        0
-      ],
-      "id": "LB-034"
-    },
-    {
-      "pose": [
-        -30.15457,
-        -99.67752,
-        0
-      ],
-      "id": "LA-022"
-    },
-    {
-      "pose": [
-        -28.91752,
-        -44.34554,
-        0
-      ],
-      "id": "LC-015"
-    },
-    {
-      "pose": [
-        2.617678,
-        -1.55735,
-        0
-      ],
-      "id": "init_4"
-    },
-    {
-      "pose": [
-        -69.11251,
-        -142.6223,
-        0
-      ],
-      "id": "B001"
-    },
-    {
-      "pose": [
-        0.2494166,
-        3.742846,
-        0
-      ],
-      "id": "init_20"
-    },
-    {
-      "pose": [
-        -14.14907,
-        -23.93194,
-        0
-      ],
-      "id": "C016-1"
-    },
-    {
-      "pose": [
-        -104.4422,
-        -86.30885,
-        0
-      ],
-      "id": "B024"
-    },
-    {
-      "pose": [
-        -60,
-        -30,
-        0
-      ],
-      "id": "INT-C003"
-    },
-    {
-      "pose": [
-        -106.7174,
-        -53.92551,
-        0
-      ],
-      "id": "B039"
-    },
-    {
-      "pose": [
-        -5.337179,
-        -7.482509,
-        0
-      ],
-      "id": "C021"
-    },
-    {
-      "pose": [
-        -16.8584,
-        -27.74149,
-        0
-      ],
-      "id": "LC-003"
-    },
-    {
-      "pose": [
-        -33.04047,
-        -107.2446,
-        0
-      ],
-      "id": "A049"
-    },
-    {
-      "pose": [
-        -37.5,
-        5,
-        0
-      ],
-      "id": "INT-C004"
-    },
-    {
-      "pose": [
-        -96.21963,
-        -23.3045,
-        0
-      ],
-      "id": "B050-1"
-    },
-    {
-      "pose": [
-        -25.35001,
-        -38.55004,
-        0
-      ],
-      "id": "C013-2"
-    },
-    {
-      "pose": [
-        3.821911,
-        -2.891412,
-        0
-      ],
-      "id": "init_15"
-    },
-    {
-      "pose": [
-        -69.43815,
-        -140.8421,
-        0
-      ],
-      "id": "B006"
-    },
-    {
-      "pose": [
-        -1.20317,
-        1.715641,
-        0
-      ],
-      "id": "init_18"
-    },
-    {
-      "pose": [
-        -1.270513,
-        2.550562,
-        0
-      ],
-      "id": "init_23"
-    },
-    {
-      "pose": [
-        -24.43369,
-        -39.15257,
-        0
-      ],
-      "id": "LC-005"
-    },
-    {
-      "pose": [
-        -94.35455,
-        -114.9168,
-        0
-      ],
-      "id": "B015"
-    },
-    {
-      "pose": [
-        -103.8224,
-        -93.44003,
-        0
-      ],
-      "id": "B025"
-    },
-    {
-      "pose": [
-        -88.49725,
-        -122.0948,
-        0
-      ],
-      "id": "B014-2"
-    },
-    {
-      "pose": [
-        -40.18932,
-        0.2280047,
-        0
-      ],
-      "id": "C064"
-    },
-    {
-      "pose": [
-        -74.67226,
-        -138.1191,
-        0
-      ],
-      "id": "B003"
-    },
-    {
-      "pose": [
-        -100.0061,
-        -100.7224,
-        0
-      ],
-      "id": "B018"
-    },
-    {
-      "pose": [
-        -56.9249,
-        -32.8372,
-        0
-      ],
-      "id": "LC-022"
-    },
-    {
-      "pose": [
-        -77.99274,
-        -133.4022,
-        0
-      ],
-      "id": "B008-2"
-    },
-    {
-      "pose": [
-        -56.23315,
-        -31.42005,
-        0
-      ],
-      "id": "LC-023"
-    },
-    {
-      "pose": [
-        -12.13564,
-        -17.9361,
-        0
-      ],
-      "id": "C017"
-    },
-    {
-      "pose": [
-        -98.44362,
-        -28.47984,
-        0
-      ],
-      "id": "LB-050"
-    },
-    {
-      "pose": [
-        -107.387,
-        -73.64619,
-        0
-      ],
-      "id": "B031"
-    },
-    {
-      "pose": [
-        -37.38306,
-        -114.9725,
-        0
-      ],
-      "id": "A054"
-    },
-    {
-      "pose": [
-        -69.78798,
-        15.68671,
-        0
-      ],
-      "id": "B067"
-    },
-    {
-      "pose": [
-        3.382831,
-        -2.028633,
-        0
-      ],
-      "id": "init_9"
-    },
-    {
-      "pose": [
-        -105.95,
-        -58.76543,
-        0
-      ],
-      "id": "B036"
-    },
-    {
-      "pose": [
-        -23.70964,
-        -54.18864,
-        0
-      ],
-      "id": "INT-C007"
-    },
-    {
-      "pose": [
-        -83.45932,
-        -4.298347,
-        0
-      ],
-      "id": "B060-1"
-    },
-    {
-      "pose": [
-        -107.5476,
-        -68.17053,
-        0
-      ],
-      "id": "B033"
-    },
-    {
-      "pose": [
-        -89.26804,
-        -122.7542,
-        0
-      ],
-      "id": "B011"
-    },
-    {
-      "pose": [
-        -83.8447,
-        -129.1744,
-        0
-      ],
-      "id": "B007-2"
-    },
-    {
-      "pose": [
-        -42.81656,
-        -120.8069,
-        0
-      ],
-      "id": "INT-A001"
-    },
-    {
-      "pose": [
-        -2.469061,
-        1.286334,
-        0
-      ],
-      "id": "init_30"
-    },
-    {
-      "pose": [
-        -105.3101,
-        -86.41079,
-        0
-      ],
-      "id": "B027"
-    },
-    {
-      "pose": [
-        -98.02887,
-        -27.01337,
-        0
-      ],
-      "id": "B048"
-    },
-    {
-      "pose": [
-        -67.17828,
-        -143.8882,
-        0
-      ],
-      "id": "LB-001"
-    },
-    {
-      "pose": [
-        2.825733,
-        -2.756639,
-        0
-      ],
-      "id": "init_10"
-    },
-    {
-      "pose": [
-        -58.51849,
-        -25.99691,
-        0
-      ],
-      "id": "C059"
-    },
-    {
-      "pose": [
-        -101.9654,
-        -37.66249,
-        0
-      ],
-      "id": "B044-1"
-    },
-    {
-      "pose": [
-        -45.31371,
-        -123.9854,
-        0
-      ],
-      "id": "LA-015"
-    },
-    {
-      "pose": [
-        -26.11576,
-        -51.21051,
-        0
-      ],
-      "id": "LC-054"
-    },
-    {
-      "pose": [
-        4.686273,
-        -1.672326,
-        0
-      ],
-      "id": "init_13"
-    },
-    {
-      "pose": [
-        -27.54516,
-        -53.2444,
-        0
-      ],
-      "id": "C002"
-    },
-    {
-      "pose": [
-        -11.23286,
-        -3.470534,
-        0
-      ],
-      "id": "INT-C009"
-    },
-    {
-      "pose": [
-        -0.4507265,
-        3.059267,
-        0
-      ],
-      "id": "init_16"
-    },
-    {
-      "pose": [
-        -53.43081,
-        -34.46329,
-        0
-      ],
-      "id": "C-stairs-2"
-    },
-    {
-      "pose": [
-        4.826545,
-        0.04720759,
-        0
-      ],
-      "id": "init_6"
-    },
-    {
-      "pose": [
-        -97.23789,
-        -107.4094,
-        0
-      ],
-      "id": "B016-2"
-    },
-    {
-      "pose": [
-        -80.93893,
-        -131.9215,
-        0
-      ],
-      "id": "B007-1"
-    },
-    {
-      "pose": [
-        -105.8748,
-        -81.38637,
-        0
-      ],
-      "id": "INT-B002"
-    },
-    {
-      "pose": [
-        -4.329483,
-        -8.017118,
-        0
-      ],
-      "id": "C018-1"
-    },
-    {
-      "pose": [
-        5.015757,
-        -1.023792,
-        0
-      ],
-      "id": "init_12"
-    },
-    {
-      "pose": [
-        -35.74035,
-        5.100667,
-        0
-      ],
-      "id": "LC-046"
-    },
-    {
-      "pose": [
-        -84.47298,
-        -3.604766,
-        0
-      ],
-      "id": "B061"
-    },
-    {
-      "pose": [
-        -18.27401,
-        -30.02443,
-        0
-      ],
-      "id": "C016-2"
-    },
-    {
-      "pose": [
-        -103.7355,
-        -89.55469,
-        0
-      ],
-      "id": "B022"
-    },
-    {
-      "pose": [
-        -1.632177,
-        1.014294,
-        0
-      ],
-      "id": "init_19"
-    },
-    {
-      "pose": [
-        -55.13196,
-        -20.98258,
-        0
-      ],
-      "id": "C061-2"
-    },
-    {
-      "pose": [
-        -25.7179,
-        -41.19298,
-        0
-      ],
-      "id": "C014-2"
-    },
-    {
-      "pose": [
-        -47.65579,
-        -9.311078,
-        0
-      ],
-      "id": "C063-2"
-    },
-    {
-      "pose": [
-        -57.6,
-        -26.54627,
-        0
-      ],
-      "id": "LC-026"
-    },
-    {
-      "pose": [
-        -0.7494147,
-        3.222561,
-        0
-      ],
-      "id": "init_22"
-    },
-    {
-      "pose": [
-        -11.07922,
-        -18.64927,
-        0
-      ],
-      "id": "LC-007"
-    },
-    {
-      "pose": [
-        -42.71361,
-        -43.10459,
-        0
-      ],
-      "id": "LC-018"
-    },
-    {
-      "pose": [
-        -94.89967,
-        -19.10809,
-        0
-      ],
-      "id": "B053"
-    },
-    {
-      "pose": [
-        -14,
-        -75,
-        0
-      ],
-      "id": "stairs-mensa"
-    },
-    {
-      "pose": [
-        -79.00788,
-        -134.4091,
-        0
-      ],
-      "id": "B005"
-    },
-    {
-      "pose": [
-        -105.6009,
-        -54.07439,
-        0
-      ],
-      "id": "B038-1"
-    },
-    {
-      "pose": [
-        -99.2571,
-        -28.0722,
-        0
-      ],
-      "id": "B049"
-    },
-    {
-      "pose": [
-        -100.6071,
-        -102.1163,
-        0
-      ],
-      "id": "LB-022"
-    },
-    {
-      "pose": [
-        -102.9772,
-        -37.35704,
-        0
-      ],
-      "id": "B045"
-    },
-    {
-      "pose": [
-        -35.44138,
-        -112.06,
-        0
-      ],
-      "id": "A053"
-    },
-    {
-      "pose": [
-        2.104245,
-        -2.337139,
-        0
-      ],
-      "id": "init_5"
-    },
-    {
-      "pose": [
-        -20.99628,
-        -34.11314,
-        0
-      ],
-      "id": "C014-1"
-    },
-    {
-      "pose": [
-        -89.65088,
-        -11.05673,
-        0
-      ],
-      "id": "B057"
-    },
-    {
-      "pose": [
-        -45.56015,
-        -6.240571,
-        0
-      ],
-      "id": "LC-008"
-    },
-    {
-      "pose": [
-        -44.85293,
-        -6.737554,
-        0
-      ],
-      "id": "C062"
-    },
-    {
-      "pose": [
-        5.435589,
-        -0.3691813,
-        0
-      ],
-      "id": "init_11"
-    },
-    {
-      "pose": [
-        -73.78865,
-        -137.1447,
-        0
-      ],
-      "id": "B008-1"
-    },
-    {
-      "pose": [
-        -20.86694,
-        -80.05825,
-        0
-      ],
-      "id": "LA-007"
-    },
-    {
-      "pose": [
-        3.972071,
-        0.4168351,
-        0
-      ],
-      "id": "init_1"
-    },
-    {
-      "pose": [
-        -0.8953505,
-        4.205285,
-        0
-      ],
-      "id": "init_26"
-    },
-    {
-      "pose": [
-        -0.7851744,
-        2.331404,
-        0
-      ],
-      "id": "init_17"
-    },
-    {
-      "pose": [
-        -16.3927,
-        -76.37867,
-        0
-      ],
-      "id": "mensa-entrance"
-    },
-    {
-      "pose": [
-        -51.5713,
-        -15.65408,
-        0
-      ],
-      "id": "C061-1"
-    },
-    {
-      "pose": [
-        -8.870706,
-        -12.87811,
-        0
-      ],
-      "id": "C019"
-    }
-  ]
+  }
 }
