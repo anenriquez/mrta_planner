@@ -7,11 +7,10 @@ from networkx.readwrite import json_graph
 
 
 class MapGraph(nx.Graph):
-    def __init__(self, map_name):
+    def __init__(self):
         super().__init__()
-        self.map_name = map_name
 
-    def generate_map(self, config, edge_info_path, min_n_runs, obstacle_interval):
+    def generate_map(self, config, edge_info_path, min_n_runs, obstacle_interval, map_name):
         nodes = config.get('nodes')
         edges = config.get('edges')
         lane_connections = config.get('lane-connections')
@@ -36,7 +35,7 @@ class MapGraph(nx.Graph):
                 if undirected_edge_info:
                     self.add_undirected_edge(edge, nodes, undirected_edge_info)
 
-        self.to_json("planner/graphs/" + self.map_name + ".json")
+        self.to_json("planner/graphs/" + map_name + ".json")
 
     def add_meta_info(self, min_n_runs, obstacle_interval, goals):
         self.graph['min_n_runs'] = min_n_runs
@@ -87,8 +86,8 @@ class MapGraph(nx.Graph):
         return data
 
     @classmethod
-    def from_json(cls, json_file, map_name):
-        map_graph = cls(map_name)
+    def from_json(cls, json_file):
+        map_graph = cls()
         with open(json_file) as infile:
             json_dict = json.load(infile)
 

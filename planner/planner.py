@@ -1,32 +1,31 @@
 import networkx as nx
 import numpy as np
+from importlib_resources import open_text
+
 from planner.map_graph import MapGraph
 from planner.utils.utils import load_yaml
-from importlib_resources import open_text
 
 
 class Planner:
-    def __init__(self, map_name, load_map=True, **kwargs):
-        self.map_graph = MapGraph(map_name)
-        self.map_name = map_name
-        if load_map:
-            self.load_map()
+    def __init__(self, map_name=None, **kwargs):
+        if map_name:
+            self.map_graph = self.load_map(map_name)
 
-    def generate_map(self, config_file, edge_info_path, min_n_runs, obstacle_interval):
+    def generate_map(self, config_file, edge_info_path, min_n_runs, obstacle_interval, map_name):
         config = load_yaml(config_file)
-        self.map_graph.generate_map(config, edge_info_path, min_n_runs, obstacle_interval)
+        self.map_graph.generate_map(config, edge_info_path, min_n_runs, obstacle_interval, map_name)
 
-    def load_map(self):
-        json_file = open_text('planner.graphs', self.map_name + '.json').name
-        self.map_graph = self.map_graph.from_json(json_file, self.map_name)
+    def load_map(self, map_name):
+        json_file = open_text('planner.graphs', map_name + '.json').name
+        return MapGraph.from_json(json_file)
 
     def distance(self, node_1, node_2):
         x1, y1, z1 = self.map_graph.nodes[node_1]['pose']
         x2, y2, z2 = self.map_graph.nodes[node_2]['pose']
         return ((x1 - x2) ** 2 + (y1 - y2) ** 2) ** 0.5
 
-    def get_path(self, node_1, node_2):
-        return nx.astar_path(self.map_graph, node_1, node_2, self.distance)
+    def get_path(self, location_1, location_2):
+        return nx.astar_path(self.map_graph, location_1, location_2, self.distance)
 
     def get_node(self, x, y):
         poses = nx.get_node_attributes(self.map_graph, 'pose')
@@ -73,4 +72,3 @@ class Planner:
                 variance += edge_data.get('variance')
 
         return mean, variance
-
