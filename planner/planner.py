@@ -62,13 +62,8 @@ class Planner:
         """
         mean = 0
         variance = 0
-        for i in range(0, len(path)-1):
-            edge_data = self.map_graph.get_edge_data(path[i], path[i+1])
-            if edge_data.get('connection_lane'):
-                # No experimental info for this edge, add a duration of 1 unit with no variance
-                mean += 1
-            else:
-                mean += edge_data.get('mean')
-                variance += edge_data.get('variance')
+        for edge in nx.utils.pairwise(path):
+            mean = mean + self.map_graph.edges.get(edge, {}).get('mean', 1)
+            variance = variance + self.map_graph.edges.get(edge, {}).get('variance', 0)
 
         return mean, variance
