@@ -7,8 +7,6 @@ from networkx.readwrite import json_graph
 
 
 class MapGraph(nx.Graph):
-    def __init__(self):
-        super().__init__()
 
     def generate_map(self, config, edge_info_path, min_n_runs, obstacle_interval, map_name):
         nodes = config.get('nodes')

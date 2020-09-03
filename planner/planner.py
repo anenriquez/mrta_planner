@@ -7,9 +7,11 @@ from planner.utils.utils import load_yaml
 
 
 class Planner:
-    def __init__(self, map_name=None, **kwargs):
+    def __init__(self, map_name=None, graph=None, **kwargs):
         if map_name:
             self.map_graph = self.load_map(map_name)
+        elif graph:
+            self.map_graph = MapGraph(graph)
 
     def generate_map(self, config_file, edge_info_path, min_n_runs, obstacle_interval, map_name):
         config = load_yaml(config_file)
